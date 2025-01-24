@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  background-color: #f3f4f6;
+  height: 83vh;
+
+  .buttonText {
+    background: #242226;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #55555e;
+    }
+  }
+}
