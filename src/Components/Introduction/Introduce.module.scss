@@ -1,0 +1,39 @@
+.insidearticle {
+  justify-content: flex-start;
+  background-color: #ffffff;
+  width: 56%;
+  margin-left: 130px;
+  margin-top: 50px;
+  padding-bottom: -10px;
+  border-right: 2px solid rgba(0, 0, 0, 0.07);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 0 10px rgba(232, 234, 237, 0.5);
+
+  .entryheader {
+    display: block;
+    unicode-bidi: isolate;
+    
+    .entrytitle {
+      color: #2f4468;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 1.2em;
+      text-transform: none;
+      margin-left: 50px;
+      padding-top: 30px;
+    }
+  }
+
+  .entrycontent {
+    margin-left: 50px;
+    p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      unicode-bidi: isolate;
+      margin-bottom: 1.5em;
+    }
+  }
+}
