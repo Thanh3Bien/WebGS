@@ -2,16 +2,10 @@ import React, { useState } from "react";
 import Header from "../../Header/Header";
 import styles from "../Home/Home.module.scss";
 import { Link } from "react-router-dom";
-import { QRCodeCanvas } from 'qrcode.react'; // Use QRCodeCanvas or QRCodeSVG
-import img from "../../assets/z6258155643613_ae9c93f4ddeb02be093acdcdc24e3eec.jpg";
+import Footer from "../Footer/Footer";
+import Zalo from "../ZaloSupport/Zalo";
 export default function Home() {
-  const [showQRCode, setShowQRCode] = useState(false);
-  const handleClick = () => {
-    setShowQRCode(true);
-  };
-  const handleClose = () => {
-    setShowQRCode(false);
-  };
+  
   const tableData = [
     {
       class: "Lớp lá 1,2,3,4",
@@ -3619,38 +3613,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.sitefooter}>
-        <footer className={styles.siteinfo}>
-          <div className={`${styles.insidesiteinfo} ${styles.gridcontainer}`}>
-            <div className={styles.copyrightbar}>
-              <span className={styles.copyright}>
-                © 2025 Trung Tâm Gia Sư Biên Hòa
-              </span>{" "}
-              • Tạo ra với <a href="/">GeneratePress</a>
-            </div>
-          </div>
-        </footer>
-      </div>
-      <div className={styles.zalosupport}>
-        <div className={styles.zaloicon} onClick={handleClick}>
-          <img src={img} alt="Zalo Support" className={styles.zaloimage} />
-          <span className={styles.zalotext}>Hỗ Trợ Ngay</span>
-        </div>
-        {showQRCode && (
-          <div className={styles.qrmodal}>
-            <div className={styles.qrcontent}>
-              <h3>Quét mã Zalo</h3>
-              <QRCodeCanvas
-                value="https://id.zalo.me/account?continue=http%3A%2F%2Fzalo%2Eme%2F0706671682"
-                size={200}
-              />
-              <button className={styles.closebutton} onClick={handleClose}>
-                Đóng
-              </button>
-            </div>
-          </div>
-        )}
-      </div>
+      <Footer />
+      <Zalo />
     </>
   );
 }
