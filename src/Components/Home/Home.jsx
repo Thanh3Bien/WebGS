@@ -410,7 +410,7 @@ export default function Home() {
                   Uy Tín Tp Biên Hòa sẽ liên hệ tư vấn cho quý phụ huynh trong
                   vài phút tới. Nhấn link tại{" "}
                   <Link
-                    to="/"
+                    to="/register"
                     className={styles.linkto}
                     style={{ color: "#0000ff" }}
                   >
@@ -504,7 +504,7 @@ export default function Home() {
                   Uy Tín Tp Biên Hòa sẽ liên hệ tư vấn cho quý phụ huynh trong
                   vài phút tới. Nhấn link tại{" "}
                   <Link
-                    to="/"
+                    to="/register"
                     className={styles.linkto}
                     style={{ color: "#0000ff" }}
                   >
@@ -976,7 +976,7 @@ export default function Home() {
                   Uy Tín Tp Biên Hòa sẽ liên hệ tư vấn cho quý phụ huynh trong
                   vài phút tới. Nhấn link tại{" "}
                   <Link
-                    to="/"
+                    to="/register"
                     className={styles.linkto}
                     style={{ color: "#0000ff" }}
                   >
@@ -2354,7 +2354,7 @@ export default function Home() {
                   Uy Tín Tp Biên Hòa sẽ liên hệ tư vấn cho quý phụ huynh trong
                   vài phút tới. Nhấn link tại{" "}
                   <Link
-                    to="/"
+                    to="/register"
                     className={styles.linkto}
                     style={{ color: "#0000ff" }}
                   >
@@ -2537,7 +2537,7 @@ export default function Home() {
                   Uy Tín Tp Biên Hòa sẽ liên hệ tư vấn cho quý phụ huynh trong
                   vài phút tới. Nhấn link tại{" "}
                   <Link
-                    to="/"
+                    to="/register"
                     className={styles.linkto}
                     style={{ color: "#0000ff" }}
                   >
@@ -2992,7 +2992,7 @@ export default function Home() {
                   Uy Tín Tp Biên Hòa sẽ liên hệ tư vấn cho quý phụ huynh trong
                   vài phút tới. Nhấn link tại{" "}
                   <Link
-                    to="/"
+                    to="/register"
                     className={styles.linkto}
                     style={{ color: "#0000ff" }}
                   >
@@ -3281,9 +3281,9 @@ export default function Home() {
             <p>
               Giới tính: Nữ
               <br />
-              Học trường : &nbsp;<span class="tutor-info">Giáo viên</span>
-              &nbsp;khoa&nbsp;<span class="tutor-info">Sư phạm Hoá</span>
-              &nbsp;trường&nbsp;<span class="tutor-info">
+              Học trường : &nbsp;<span className="tutor-info">Giáo viên</span>
+              &nbsp;khoa&nbsp;<span className="tutor-info">Sư phạm Hoá</span>
+              &nbsp;trường&nbsp;<span className="tutor-info">
                 Đại học Đồng Nai
               </span>{" "}
               <span
@@ -3429,7 +3429,7 @@ export default function Home() {
             </p>
             <h3>
               <span
-                class="ez-toc-section"
+                className="ez-toc-section"
                 id="Gia_su_Giao_vien_Nguyen_Thi_Bao_Ngoc"
                 ez-toc-data-id="#Gia_su_Giao_vien_Nguyen_Thi_Bao_Ngoc"
               ></span>
@@ -3438,7 +3438,7 @@ export default function Home() {
                   Gia sư : Giáo viên Nguyễn Thị Bảo Ngọc
                 </span>
               </strong>
-              <span class="ez-toc-section-end"></span>
+              <span className="ez-toc-section-end"></span>
             </h3>
             <p>
               Giới tính: Nữ
@@ -3548,7 +3548,7 @@ export default function Home() {
                   Uy Tín Tp Biên Hòa sẽ liên hệ tư vấn cho quý phụ huynh trong
                   vài phút tới. Nhấn link tại{" "}
                   <Link
-                    to="/"
+                    to="/register"
                     className={styles.linkto}
                     style={{ color: "#0000ff" }}
                   >

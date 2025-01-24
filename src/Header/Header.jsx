@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Header.module.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -14,13 +15,13 @@ const Header = () => {
         <div className={`${styles.insideNavigation} ${styles.gridContainer}`}>
           <div className={styles.navigationBranding}>
             <div className={styles.siteLogo}>
-              <a href="/">
+              <Link to="/">
                 <img
                   src="https://giasuuytinbienhoa.edu.vn/wp-content/uploads/2022/10/Logo-gia-su-Uy-Tin.jpg"
                   alt="Logo Gia Sư Uy Tín"
                   className={styles.logoImage}
                 />
-              </a>
+              </Link>
             </div>
             <h1 className={styles.siteTitle}>Trung tâm Gia Sư Biên Hòa</h1>
           </div>
@@ -28,40 +29,40 @@ const Header = () => {
           <div className={styles.navLinks}>
             <ul>
               <li className={styles.homeLink}>
-                <a href="/">Trang chủ</a>
+                <Link to="/">Trang chủ</Link>
               </li>
               <li
                 className={`${styles.dropdown} ${
                   isDropdownOpen ? styles.active : ""
                 } ${styles.parentLink}`}
               >
-                <a
+                <Link
                   href="#parents"
-                  className={styles.dropdownToggle}
+                  className="text-white"
                   onClick={toggleDropdown}
                 >
                   Dành cho quý phụ huynh{" "}
                   <span className={styles.dropdownArrow}>
                     {isDropdownOpen ? "▲" : "▼"}
                   </span>
-                </a>
+                </Link>
                 <ul className={styles.dropdownMenu}>
                   <li>
-                    <a href="/introduce">
+                    <Link to="/introduce" className="text-white">
                       Giới Thiệu Gia Sư Biên Hòa
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="/privacy-policy" className="pt-6">
+                <Link to="/privacy-policy" className="pt-6 text-white">
                   Chính sách bảo mật
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/privacy-policy" className="pt-6">
+                <Link to="/privacy-policy" className="pt-6 text-white">
                   Đăng Kí Học Gia Sư
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
