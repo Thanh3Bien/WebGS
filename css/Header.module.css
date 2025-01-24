@@ -1,0 +1,120 @@
+.container {
+  max-width: 1200px;
+}
+
+.mainNavigation {
+  background-color: #242226;
+  padding: 3px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.insideNavigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 180px;
+}
+.insideNavigation.gridContainer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+
+.navigationBranding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.navigationBranding .siteLogo {
+  margin-top: 10px;
+}
+.navigationBranding .siteLogo .logoImage {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.navigationBranding .siteTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navLinks {
+  border-width: 15px;
+  border-style: none;
+  padding-bottom: -2px;
+  margin-top: 10px;
+}
+.navLinks ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin-left: 20px;
+  padding: 0;
+}
+.navLinks ul li {
+  position: relative;
+  margin-left: -10px;
+}
+.navLinks ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  margin-left: -11px;
+}
+.navLinks ul li.homeLink {
+  background-color: #3c3c3c;
+  border: 10px solid #3c3c3c;
+  margin-left: -21px;
+  margin-top: -10px;
+}
+.navLinks ul li.homeLink a {
+  color: #fff;
+}
+.navLinks ul li.dropdown {
+  cursor: pointer;
+}
+.navLinks ul li.dropdown .dropdownArrow {
+  font-size: 0.8rem;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+.navLinks ul li.dropdown .dropdown.active .dropdownArrow {
+  transform: rotate(180deg);
+}
+.navLinks ul li.dropdown .dropdownMenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  border: 1px solid #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 13px;
+  margin-left: 31px;
+}
+.navLinks ul li.dropdown .dropdownMenu li {
+  padding: 0.5rem 1rem;
+}
+.navLinks ul li.dropdown .dropdownMenu li a {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  margin-left: -15px;
+}
+.navLinks ul li.dropdown .dropdownMenu:hover {
+  background-color: #3c3c3c;
+}
+.navLinks ul li.dropdown.active .dropdownMenu {
+  display: flex;
+}
+.navLinks ul li.dropdown.parentLink {
+  background-color: #3c3c3c;
+  border: 10px solid #3c3c3c;
+  margin-top: -10px;
+  margin-left: -32px;
+}/*# sourceMappingURL=Header.module.css.map */

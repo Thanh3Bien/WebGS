@@ -1,0 +1,137 @@
+.container {
+  max-width: 1200px;
+}
+
+.mainNavigation {
+  background-color: #242226;
+  padding: 3px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.insideNavigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 180px;
+
+  &.gridContainer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+  }
+}
+
+.navigationBranding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .siteLogo {
+    margin-top: 10px;
+
+    .logoImage {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+    }
+  }
+
+  .siteTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+.navLinks {
+  border-width: 15px;
+  border-style: none;
+  padding-bottom: -2px;
+  margin-top: 10px;
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-left: 20px;
+    padding: 0;
+
+    li {
+      position: relative;
+      margin-left: -10px;
+
+      a {
+        text-decoration: none;
+        font-size: 15px;
+        color: #fff;
+        transition: color 0.3s ease;
+        padding: 0.5rem 1rem;
+        margin-left: -11px;
+      }
+
+      &.homeLink {
+        background-color: #3c3c3c;
+        border: 10px solid #3c3c3c;
+        margin-left: -21px;
+        margin-top: -10px;
+
+        a {
+          color: #fff;
+        }
+      }
+
+      &.dropdown {
+        cursor: pointer;
+
+        .dropdownArrow {
+          font-size: 0.8rem;
+          margin-left: 5px;
+          transition: transform 0.3s ease;
+        }
+
+        .dropdown.active .dropdownArrow {
+          transform: rotate(180deg);
+        }
+
+        .dropdownMenu {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: #333;
+          border: 1px solid #333;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          margin-top: 13px;
+          margin-left: 31px;
+
+          li {
+            padding: 0.5rem 1rem;
+
+            a {
+              font-size: 14px;
+              color: #ffffff;
+              font-family: "Open Sans", sans-serif;
+              margin-left: -15px;
+            }
+          }
+
+          &:hover {
+            background-color: #3c3c3c;
+          }
+        }
+
+        &.active .dropdownMenu {
+          display: flex;
+        }
+
+        &.parentLink {
+          background-color: #3c3c3c;
+          border: 10px solid #3c3c3c;
+          margin-top: -10px;
+          margin-left: -32px;
+        }
+      }
+    }
+  }
+}
