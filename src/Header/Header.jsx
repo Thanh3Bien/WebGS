@@ -47,7 +47,7 @@ const Header = () => {
                 </a>
                 <ul className={styles.dropdownMenu}>
                   <li>
-                    <a href="/parents/tutoring-tips">
+                    <a href="/introduce">
                       Giới Thiệu Gia Sư Biên Hòa
                     </a>
                   </li>
