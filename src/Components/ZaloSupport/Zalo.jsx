@@ -6,7 +6,7 @@ export default function Zalo() {
   // const [showQRCode, setShowQRCode] = useState(false);
     const handleClick = () => {
       // setShowQRCode(true);
-      window.location.href = "https://zalo.me/0328588985";
+      window.location.href = "https://zalo.me/0975248259";
     };
     // const handleClose = () => {
     //   setShowQRCode(false);
