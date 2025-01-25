@@ -155,7 +155,7 @@ export default function Introduce() {
             <span style={{ color: "#0000ff" }}>
               <a
                 style={{ color: "#0000ff" }}
-                href="http://giasuuytinbienhoa.edu.vn/chinh-sach-bao-mat"
+                href="/register"
               >
                 Đăng ký ngay hôm nay – Cơ hội học thử miễn phí
               </a>
