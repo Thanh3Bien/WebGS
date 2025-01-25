@@ -55,7 +55,7 @@ const Header = () => {
                 </ul>
               </li>
               <li>
-                <Link to="/privacy-policy" className="pt-6 text-white">
+                <Link to="/privacy" className="pt-6 text-white">
                   Chính sách bảo mật
                 </Link>
               </li>
