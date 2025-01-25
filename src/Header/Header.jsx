@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Header.module.scss";
 import { Link } from "react-router-dom";
-
+import logo from "../assets/z6260461294475_7ef552247c80c53ebb9b621cffa245ea.jpg";
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -17,7 +17,8 @@ const Header = () => {
             <div className={styles.siteLogo}>
               <Link to="/">
                 <img
-                  src="https://giasuuytinbienhoa.edu.vn/wp-content/uploads/2022/10/Logo-gia-su-Uy-Tin.jpg"
+                  // src="https://giasuuytinbienhoa.edu.vn/wp-content/uploads/2022/10/Logo-gia-su-Uy-Tin.jpg"
+                  src={logo}
                   alt="Logo Gia Sư Uy Tín"
                   className={styles.logoImage}
                 />
