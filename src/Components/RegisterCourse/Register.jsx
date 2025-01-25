@@ -32,7 +32,7 @@ export default function Register() {
           onSubmit={sendEmail}
           ref={form}
         >
-          <h1 className="text-2xl font-bold text-left mb-6 text-[#333]">
+          <h1 className="text-2xl font-bold text-left mb-6 text-[#333] -mt-4">
             Form Đăng Kí Học Gia Sư Cho Học Sinh
           </h1>
           <p className="mb-4">
@@ -53,7 +53,7 @@ export default function Register() {
           </p>
           <p className="mb-4">
             <label className="block font-medium text-gray-700 mb-2 cursor-default">
-              Muốn Tìm Gia Sư Dạy Kèm Lớp - Môn:
+              Muốn Tìm Gia Sư Dạy Kèm Môn:
               <br />
               <span className="relative block">
                 <input
@@ -61,6 +61,22 @@ export default function Register() {
                   maxLength="400"
                   className="w-full text-[#212121] bg-[#fafafa] border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
                   type="text"
+                  required
+                  name="class_subject"
+                />
+              </span>
+            </label>
+          </p>
+          <p className="mb-4">
+            <label className="block font-medium text-gray-700 mb-2 cursor-default">
+              Lớp:
+              <br />
+              <span className="relative block">
+                <input
+                  size="40"
+                  maxLength="400"
+                  className="w-full text-[#212121] bg-[#fafafa] border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
+                  type="number"
                   required
                   name="class_subject"
                 />
