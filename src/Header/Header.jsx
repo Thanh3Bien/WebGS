@@ -60,7 +60,7 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/privacy-policy" className="pt-6 text-white">
+                <Link to="/register" className="pt-6 text-white">
                   Đăng Kí Học Gia Sư
                 </Link>
               </li>
