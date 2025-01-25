@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Header.module.scss";
 import { Link } from "react-router-dom";
-import logo from "../../assets/z6260461294475_7ef552247c80c53ebb9b621cffa245ea.jpg";
+import logo from "../assets/z6260461294475_7ef552247c80c53ebb9b621cffa245ea.jpg";
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
