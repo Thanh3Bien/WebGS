@@ -9,10 +9,10 @@ export default function Register() {
 
     emailjs
       .sendForm(
-        "service_cj9gfiw",
-        "template_t0kjsa4",
+        "service_0ozdlpn",
+        "template_e31o7ld",
         form.current,
-        "JWPgNV0t_p2VbGE8w"
+        "sRe_wqnmfOrvSIi0Q"
       )
       .then(
         () => {
