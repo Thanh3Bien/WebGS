@@ -9,25 +9,86 @@ export default function Introduce() {
       <Header />
       <div className={styles.insidearticle}>
         <header className={styles.entryheader}>
-          <h1 className={styles.entrytitle}>Giới Thiệu Gia Sư</h1>
+          <h1 className={styles.entrytitle}>
+            Trung tâm Gia sư Giỏi Biên Hòa – Giải pháp toàn diện cho con bạn
+            chinh phục tri thức
+          </h1>
         </header>
         <div className={styles.entrycontent}>
           <p>
             <a href="/" className="text-[#1b78e2] hover:text-[#242226]">
-              Trung tâm gia sư Uy Tín sư phạm thành phố Biên Hòa
+              Bạn đang tìm kiếm một trung tâm gia sư uy tín tại Biên Hòa?
             </a>{" "}
-            được thành lập từ rất sớm đầu những năm 2010. Tính đến thời điểm này
-            là được 10 năm thành lập và{" "}
-            <strong>trung tâm gia sư Biên Hòa</strong> chúng tôi cũng đã rút kết
-            nhiều kinh nghiệm trong giảng dạy cũng như công tác tư vấn gia sư.
+            Trung tâm Gia sư Giỏi Biên Hòa là lựa chọn lý tưởng để giúp con bạn
+            cải thiện kết quả học tập nhanh chóng và bền vững. Với dịch vụ gia
+            sư 1 kèm 1 chuyên nghiệp, chúng tôi mang đến lộ trình học tập được
+            cá nhân hóa, phù hợp với từng học viên.
+            <img
+              src="https://giasudaykemtainha.vn/uploads/posts/cach-tim-lop-day-gia-su-khong-qua-trung-tam.jpg"
+              alt=""
+            />
           </p>
           <p>
-            <strong>Trung tâm gia sư dạy kèm Biên Hòa</strong> được thành lập
-            với sứ mệnh đem đến những gia sư chất lượng cho các em học sinh. Và
-            tạo công việc cho các bạn sinh viên và giáo viên có lớp dạy kèm tại
-            nhà chất lượng.
+            <strong>
+              Dịch vụ gia sư 1 kèm 1 chuyên nghiệp – Chìa khóa giúp con bạn tiến
+              bộ vượt bậc
+            </strong>{" "}
+            <ul className="list-disc ml-5">
+              <li>
+                Dành cho học sinh từ lớp 1 đến lớp 12, từ cơ bản đến nâng cao.
+              </li>
+              <li>
+                Luyện thi chuyên sâu: Đầu vào lớp 10 trường THPT chuyên Lương
+                Thế Vinh, trường điểm (Ngô Quyền, Trấn Biên, Nam Hà,...); ôn
+                luyện thi đại học các khối vào các trường Đại học lớn.
+              </li>
+              <li>
+                Cam kết tiến bộ rõ rệt chỉ sau 1 tháng học với phương pháp cá
+                nhân hóa.
+              </li>
+              <li>
+                Học ngay tại nhà, lịch học linh hoạt, phù hợp với học sinh và
+                gia đình
+              </li>
+              <li>
+                Giáo viên giỏi, giàu kinh nghiệm từ các trường học uy tín tại
+                Biên Hòa.
+              </li>
+              <li>
+                Sinh viên xuất sắc đến từ các đại học danh tiếng, tận tâm và
+                nhiệt huyết.
+              </li>
+              <li>
+                Phương pháp giảng dạy hiện đại, cập nhật giúp học sinh tiếp thu
+                nhanh, học tập hiệu quả.
+              </li>
+              <li>
+                Không chỉ dạy kiến thức, gia sư còn tạo môi trường học vui vẻ,
+                giảm áp lực cho học sinh, phát huy khả năng sáng tạo, nâng cao
+                và phát triển tư duy
+              </li>
+              <li>
+                Bám sát chương trình học, giúp học viên tự tin nắm vững kiến
+                thức.
+              </li>
+              <li>
+                Hỗ trợ mọi lúc, học viên có thể nhắn tin hỏi bài ngoài giờ.
+              </li>
+              <li>
+                Báo cáo tiến độ hàng tháng: Giúp phụ huynh dễ dàng theo dõi sự
+                tiến bộ của con.
+              </li>
+              <li>
+                Tư vấn miễn phí: Lộ trình học cá nhân hóa phù hợp với năng lực
+                và mục tiêu của học viên.
+              </li>
+            </ul>
+            <img
+              src="https://giasugiatri.edu.vn/wp-content/uploads/2024/08/Trung-Tam-Gia-Su-Bien-Hoa-1024x589.jpg"
+              alt=""
+            />
           </p>
-          <p>
+          {/* <p>
             Năm 2007 mình bắt đầu đăng ký đi dạy kèm tại các trung tâm gia sư,
             không biết tại số mình xui hay sao mà toàn gặp mấy lớp gì đâu. Nào
             là trung tâm báo giá một đằng còn phụ huynh thì nói một nẻo, lớp thì
@@ -89,18 +150,26 @@ export default function Introduce() {
             trường nhận các lớp giáo viên hoặc tư vấn là sinh viên giỏi kinh
             nghiệm nhiều năm kinh nghiệm thì lại giao mấy bạn sinh viên năm nhất
             hay các bạn sinh viên mới tập đi dạy lần đầu.
-          </p>
+          </p> */}
           <p>
-            Bài viết liên quan:{" "}
             <span style={{ color: "#0000ff" }}>
               <a
                 style={{ color: "#0000ff" }}
                 href="http://giasuuytinbienhoa.edu.vn/chinh-sach-bao-mat"
               >
-                Chính sách bảo mật thông tin khách hàng tại trung tâm gia sư
-                Biên Hòa
+                Đăng ký ngay hôm nay – Cơ hội học thử miễn phí
               </a>
             </span>
+            <ul className="list-disc">
+              <li>Hotline tư vấn: 0975 248 259</li>
+              <li>
+                Hãy để Trung tâm Gia sư Giỏi Biên Hòa đồng hành cùng con bạn
+                trên con đường chinh phục tri thức và xây dựng tương lai tươi
+                sáng.
+              </li>
+            </ul>
+            Địa chỉ: 1334/10 khu phố 3, phường Tân Tiến, Biên Hoà, Đồng Nai (gần
+            Cooomart Biên Hoà) 132/7 Bình Chuẩn 19, Thuận An, Bình Dương
           </p>
         </div>
       </div>
