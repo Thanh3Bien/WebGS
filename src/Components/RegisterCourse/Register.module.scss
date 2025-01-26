@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   background-color: #f3f4f6;
-  height: 83vh;
+  height: 82.5vh;
   overflow-y: hidden;
 
   .buttonText {
@@ -9,7 +9,7 @@
     border: 1px solid transparent;
     cursor: pointer;
     padding: 10px 20px;
-    margin-top: 10px;
+    margin-top: -5px;
     color: #ffffff;
 
     &:hover {
