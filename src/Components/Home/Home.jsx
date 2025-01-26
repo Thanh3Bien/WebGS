@@ -4,6 +4,7 @@ import styles from "../Home/Home.module.scss";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Zalo from "../ZaloSupport/Zalo";
+import { Carousel } from "react-responsive-carousel";
 export default function Home() {
   const tableData = [
     {
@@ -47,50 +48,6 @@ export default function Home() {
       class: "Lớp 12 – LTĐH",
       studentPrice: "2.2 – 2.4 triệu/tháng",
       teacherPrice: "3.2 – 3.6 triệu/tháng"
-    }
-  ];
-  const tableData2 = [
-    {
-      class: "Lớp lá 1,2,3,4",
-      studentPrice: "1.9 – 2 triệu/tháng",
-      teacherPrice: "2.7 – 2.8 triệu/tháng"
-    },
-    {
-      class: "Lớp 5,6,7,8",
-      studentPrice: "2 – 2.4 triệu/tháng",
-      teacherPrice: "2.9 – 3.2 triệu/tháng"
-    },
-    {
-      class: "Lớp 9,10,11",
-      studentPrice: "2.4 – 2.9 triệu/tháng",
-      teacherPrice: "3.3 – 4 triệu/tháng"
-    },
-    {
-      class: "Lớp 12 – LTĐH",
-      studentPrice: "2.9 – 3.2 triệu/tháng",
-      teacherPrice: "4.3 – 4.8 triệu/tháng"
-    }
-  ];
-  const tableData3 = [
-    {
-      class: "Lớp lá 1,2,3,4",
-      studentPrice: "2.4 – 2.5 triệu/tháng",
-      teacherPrice: "3.4 – 3.5 triệu/tháng"
-    },
-    {
-      class: "Lớp 5,6,7,8",
-      studentPrice: "2.5 – 3 triệu/tháng",
-      teacherPrice: "3.6 – 4 triệu/tháng"
-    },
-    {
-      class: "Lớp 9,10,11",
-      studentPrice: "3 – 3.6 triệu/tháng",
-      teacherPrice: "4.1 – 5 triệu/tháng"
-    },
-    {
-      class: "Lớp 12 – LTĐH",
-      studentPrice: "3.6 – 4 triệu/tháng",
-      teacherPrice: "5.4 – 6 triệu/tháng"
     }
   ];
   const [openDropdownBox, setOpenDropdownBox] = useState(false);
@@ -139,195 +96,63 @@ export default function Home() {
               <div className={styles.dropdownBoxMenu}>
                 <ul>
                   <li>
-                    <a href="/">1. 1.Giới thiệu trung tâm gia sư Biên Hòa</a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      2. - Đăng Ký Để Được Tư Vấn và Học Thử Miễn Phí:
+                    <a
+                      href="#1"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const section = document.getElementById(
+                          "gioi-thieu-trung-tam"
+                        );
+                        if (section) {
+                          section.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }}
+                    >
+                      1. Giới thiệu trung tâm
                     </a>
                   </li>
                   <li>
-                    <a href="/">
-                      3. 2. Đội ngũ giáo viên và sinh viên làm gia sư tại trung
-                      tâm dạy kèm Biên Hòa
+                    <a
+                      href="#2"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const section =
+                          document.getElementById("Doi-ngu-gia-su");
+                        if (section) {
+                          section.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }}
+                    >
+                      2. Đội ngũ gia sư
                     </a>
                   </li>
                   <li>
-                    <a href="/">
-                      4. 3. Các em học sinh cần học gia sư dạy kèm tại nhà
+                    <a
+                      href="#3"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const section =
+                          document.getElementById("bang-gia-tham-khao");
+                        if (section) {
+                          section.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }}
+                    >
+                      3. Bảng giá tham khảo
                     </a>
                   </li>
                   <li>
-                    <a href="/">
-                      5. - Đăng Ký Để Được Tư Vấn và Học Thử Miễn Phí:
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      6. 4. Bảng giá gia sư Biên Hòa - Liên hệ tư vấn:
-                      0961328357
-                    </a>
-                    <br />
-                    <a href="#link1" style={{ marginLeft: "28px" }}>
-                      6.1. Gia sư dạy kèm tại nhà 2 buổi/tuần tại Biên hòa.
-                    </a>
-                    <br />
-                    <a href="#link2" style={{ marginLeft: "28px" }}>
-                      6.2. Gia sư dạy kèm tại nhà 3 buổi/tuần tại Biên hòa.
-                    </a>
-                    <br />
-                    <a href="#link3" style={{ marginLeft: "28px" }}>
-                      6.3. Gia sư dạy kèm tại nhà 4 buổi/tuần tại Biên hòa.
-                    </a>
-                    <br />
-                    <a href="#link4" style={{ marginLeft: "28px" }}>
-                      6.4. Gia sư dạy kèm tại nhà 5 buổi/tuần tại Biên hòa.
-                    </a>
-                    <br />
-                  </li>
-                  <li>
-                    <a href="#register">
-                      7. - Đăng Ký Để Được Tư Vấn và Học Thử Miễn Phí:
-                    </a>
-                    <br />
-                    <a href="#number" style={{ marginLeft: "25px" }}>
-                      7.1. Tổng đài tư vấn 0961328357 (Bấm vào số để gọi)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#lop">8. 5. Lớp Dạy Kèm Tại Nhà Tp Biên Hòa:</a>
-                  </li>
-                  <li>
-                    <a href="#lop9">
-                      9. - Đăng Ký Để Được Tư Vấn và Học Thử Miễn Phí:
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#lop10">
-                      10. 6. Gia Sư Biên Hòa có đội ngũ gia sư uy tín và giàu
-                      kinh nghiệm
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#lop11">
-                      11. 7. Trung tâm gia sư Uy Tín Biên Hòa Chuyên:
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#lop11">
-                      12. 8. Những thông tin cần cung cấp để tìm gia sư dạy kèm
-                      cho con:
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#lop11">13. 9. Chất lượng của gia sư Biên Hòa</a>
-                  </li>
-                  <li>
-                    <a href="#lop11">
-                      14. - Đăng Ký Để Được Tư Vấn và Học Thử Miễn Phí:
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#lop11">
-                      15.10. Danh Sách Gia Sư Giỏi Tại Biên Hòa
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      15.1. Gia sư: Giáo viên Nguyễn Thị Khánh Tâm
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      15.2. Gia sư: Sinh viên Nguyễn Ngọc Như Phương
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      15.3. Gia Sư: Sinh viên Trang Diễm Phúc
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      15.4. Gia Sư: Sinh viên Trần Ngọc Phương Uyên
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      15.5. Gia Sư: Giáo viên Phùng Thị Kim Quyên
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      15.6. Gia Sư: Giáo viên Nguyễn Thụy Thúy An
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      15.7. Gia Sư: Sinh viên Nguyễn Yến Thảo
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      15.8. Gia Sư: Giáo viên Hồ Thị Thảo Nương
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      15.9. Gia Sư: Giáo viên Nguyễn Đình Tài
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      15.10. Gia Sư: Sinh viên Trần Thị Bảo Ngân
-                    </a>
-                    <br />
-                  </li>
-                  <li>
-                    <a href="#lop11">
-                      16. - Đăng Ký Để Được Tư Vấn và Học Thử Miễn Phí
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      16.1. Gia sư: Giáo viên Chìu Văn Thương
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      16.2. Gia sư: Sinh viên Nguyễn Nhật Minh
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      16.3. Gia Sư: Giáo viên Nguyễn Tường Vũ
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      16.4. Gia Sư: Sinh viên Nguyễn Phi Hoàng
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      16.5. Gia Sư: Sinh viên Lê Nguyễn Nhật Thy
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      16.6. Gia Sư: Giáo viên Nguyễn Thị Thanh Thảo
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      16.7. Gia Sư: Giáo viên Nguyễn Thị Ngọc Diệp
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      16.8. Gia Sư: Sinh viên Trần Quang Khánh
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      16.9. Gia Sư: Sinh viên Trương Khánh Nguyên
-                    </a>
-                    <br />
-                    <a href="#lop11" style={{ marginLeft: "28px" }}>
-                      16.10. Gia Sư: Giáo viên Nguyễn Thị Bảo Ngọc
-                    </a>
-                    <br />
-                  </li>
-                  <li>
-                    <a href="$">
-                      17.11. Liên hệ Trung Tâm Gia Sư Biên Hòa để được tư vấn
-                      miễn phí.
-                    </a>
-                  </li>
-                  <li>
-                    <a href="$">
-                      18. - Đăng Ký Để Được Tư Vấn và Học Thử Miễn Phí:
+                    <a
+                      href="#4"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const section = document.getElementById("Lien-he");
+                        if (section) {
+                          section.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }}
+                    >
+                      4. Liên hệ
                     </a>
                   </li>
                 </ul>
@@ -337,45 +162,39 @@ export default function Home() {
         </div>
         <div className={styles.mainTitle}>
           <div className={styles.mainTitleHeader}>
-            <h2>1. Giới thiệu trung tâm gia sư Biên Hòa</h2>
+            <h2 id="gioi-thieu-trung-tam">1. Giới thiệu trung tâm</h2>
             <p>
               <strong>
-                <a href="#className">Trung tâm gia sư Uy Tín tp Biên Hòa</a>
+                <a href="#className">
+                  Bạn đang tìm kiếm một trung tâm gia sư uy tín tại Biên Hòa?
+                </a>
               </strong>{" "}
-              với nhiều năm kinh nghiệm và đội ngũ gia sư giỏi nhận dạy kèm tại
-              nhà Biên Hòa{" "}
+              Trung tâm Gia sư Giỏi Biên Hòa là lựa chọn lý tưởng để giúp con
+              bạn cải thiện kết quả học tập nhanh chóng và bền vững.{" "}
               <strong>
-                Toán, Lý, Văn, Anh, Sinh, Sử, Địa, Rèn Chữ... gia sư báo bài các
-                môn
+                Dành cho học sinh từ lớp 1 đến lớp 12, từ cơ bản đến nâng cao.
               </strong>{" "}
               <span style={{ color: "#0000ff" }}>
                 <strong>
                   <em>
-                    lớp 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, Luyện thi Đại học
-                    Khối A, A1, B, C, D, V, H
+                    Luyện thi chuyên sâu: Đầu vào lớp 10 trường THPT chuyên
+                    Lương Thế Vinh, trường điểm (Ngô Quyền, Trấn Biên, Nam
+                    Hà,...); ôn luyện thi đại học các khối, vào các trường Đại
+                    học lớn, luyện thi các chứng chỉ MOS, IELTS, TOIEC,...
                   </em>
                   ….
                 </strong>
               </span>
             </p>
             <p>
-              Lấy lại kiến thức cho học sinh yếu, luyện thi cho học sinh khá,
-              giỏi trên địa bàn Thành Phố Biên Hòa tại các{" "}
+              Với dịch vụ gia sư 1 kèm 1 chuyên nghiệp, chúng tôi cam kết tiến
+              bộ rõ rệt chỉ sau 1 tháng với lộ trình học tập được cá nhân hóa,
+              phù hợp với từng học viên.Học ngay tại nhà, lịch học linh hoạt,
+              phù hợp với học sinh và gia đình.{" "}
               <span style={{ color: "#0000ff" }}>
                 <strong>
-                  Phường An Bình, An Hòa, Biên Hòa, Bình Đa, Bửu Hòa, Bửu Long,
-                  Hiệp Hòa, Hóa An, Hòa Bình, Hố Nai, Long Bình Tân, Long Bình,
-                  Long Hưng, Phước Tân,
-                </strong>
-              </span>
-            </p>
-            <p>
-              <span style={{ color: "#0000ff" }}>
-                <span style={{ color: "#000000" }}>Gia sư dạy kèm</span>{" "}
-                <strong>
-                  Phường Quang Vinh, Quyết Thắng, Tam Hiệp, Tam Hòa, Tam Phước,
-                  Tân Biên, Tân Hạnh, Tân Hiệp, Tân Hòa, Tân Mai, Tân Phong, Tân
-                  Tiến, Tân Vạn, Trảng Dài, Trung Dũng
+                  Tư vấn miễn phí lộ trình học cá nhân hóa phù hợp với năng lực
+                  và mục tiêu của học viên
                 </strong>
               </span>
             </p>
@@ -418,66 +237,48 @@ export default function Home() {
                 </strong>
               </span>
             </p>
-            <h2>
+            <h2 id="Doi-ngu-gia-su">
               <span
                 className="ez-toc-section"
                 id="2_Doi_ngu_giao_vien_va_sinh_vien_lam_gia_su_tai_trung_tam_day_kem_Bien_Hoa"
                 ez-toc-data-id="#2_Doi_ngu_giao_vien_va_sinh_vien_lam_gia_su_tai_trung_tam_day_kem_Bien_Hoa"
               ></span>
-              <span style={{ color: "#008000" }}>
-                2. Đội ngũ giáo viên và sinh viên làm gia sư tại trung tâm dạy
-                kèm Biên Hòa
-              </span>
+              <span style={{ color: "#008000" }}>2. Đội ngũ gia sư</span>
             </h2>
             <p>
-              <strong>Trung tâm gia sư Sư Phạm Uy Tín Tp Biên Hòa</strong> hiện
-              đang cộng tác với các bạn gia sư là giáo viên tại các trường tiểu
-              học trung học phổ thông và trung học cơ sở. Gia sư sinh viên giỏi
-              hiện đang học các trường Đại học Cao đẳng trên địa bàn Tp Biên
-              Hòa.
+              <ul className="list-disc ml-5">
+                <li>
+                  Giáo viên giỏi, tốt nghiệp chuyên ngành sư phạm, giàu kinh
+                  nghiệm từ các trường học uy tín tại Biên Hòa.
+                </li>
+                <li>
+                  {" "}
+                  Sinh viên xuất sắc đến từ các đại học danh tiếng, tận tâm và
+                  nhiệt huyết.
+                </li>
+                <li>
+                  {" "}
+                  Phương pháp giảng dạy hiện đại, cập nhật giúp học sinh tiếp
+                  thu nhanh, học tập hiệu quả.
+                </li>
+                <li>
+                  Không chỉ dạy kiến thức, gia sư còn tạo môi trường học vui vẻ,
+                  giảm áp lực cho học sinh, phát huy khả năng sáng tạo, nâng cao
+                  và phát triển tư duy
+                </li>
+                <li>
+                  Bám sát chương trình học, giúp học viên tự tin nắm vững kiến
+                  thức.
+                </li>
+                <li>
+                  Hỗ trợ mọi lúc, học viên có thể nhắn tin hỏi bài ngoài giờ.
+                </li>
+                <li>
+                  Báo cáo tiến độ hàng tháng giúp phụ huynh dễ dàng theo dõi sự
+                  tiến bộ của con.
+                </li>
+              </ul>
             </p>
-            <p>
-              Đội ngũ gia sư của trung tâm gia sư Uy Tín chỉ nhận các bạn gia sư
-              đã có kinh nghiệm dạy kèm gia sư ít nhất là 2 năm kinh nghiệm đối
-              với gia sư sinh viên và 4 năm kinh nghiệm đối với gia sư giáo
-              viên, có trách nhiệm trong công tác giảng dạy.
-            </p>
-            <h2>
-              <span
-                className="ez-toc-section"
-                id="3_Cac_em_hoc_sinh_can_hoc_gia_su_day_kem_tai_nha"
-                ez-toc-data-id="#3_Cac_em_hoc_sinh_can_hoc_gia_su_day_kem_tai_nha"
-              ></span>
-              <span style={{ color: "#008000" }}>
-                3. Các em học sinh cần học gia sư dạy kèm tại nhà
-              </span>
-            </h2>
-            <br />
-            <ul style={{ listStyle: "disc", margin: "0 0 1.5em 3em" }}>
-              <li>
-                <strong>Trung tâm gia sư Uy Tín Biên Hòa</strong> đã có hơn 10
-                năm kinh nghiệm và đội ngũ <strong>gia sư giỏi</strong> nhận dạy
-                kèm tại nhà. Trung tâm chúng tôi chuyên dạy cho học sinh yếu,
-                mất kiến thức căn bản và luyện thi cho học sinh khá, giỏi trên
-                địa bàn Thành Phố Biên Hòa.
-              </li>
-              <li>
-                Với{" "}
-                <strong>
-                  kinh nghiệm và phương pháp sư phạm gia sư Biên Hòa
-                </strong>{" "}
-                cam kết các em học sinh tiến bộ sau 1 tháng học gia sư. Chương
-                trình học tại nhà sẽ bám sát theo chương trình trên lớp của các
-                em học sinh, nên quý phụ huynh có thể yên tâm về vấn đề học gia
-                sư tại trung tâm gia sư Biên Hòa Đồng Nai.
-              </li>
-              <li>
-                Gia sư dạy kèm sẽ thường xuyên cho các em làm bài tập ở nhà cũng
-                như làm các bài kiểm tra định kì giống với cấu trúc ra đề trên
-                lớp. Nên các em sẽ làm tốt các bài kiểm tra và tự tin trong các
-                kỳ thi học kỳ.
-              </li>
-            </ul>
             <p>
               <span style={{ color: "#ff0000" }}>
                 <strong>
@@ -518,12 +319,9 @@ export default function Home() {
                 id="4_Bang_gia_gia_su_Bien_Hoa_%E2%80%93_Lien_he_tu_van_0961_328_357"
                 ez-toc-data-id="#4_Bang_gia_gia_su_Bien_Hoa_–_Lien_he_tu_van_0961_328_357"
               ></span>
-              <span style={{ color: "#008000" }}>
-                4. Bảng giá gia sư Biên Hòa – Liên hệ tư vấn:
+              <span style={{ color: "#008000" }} id="bang-gia-tham-khao">
+                3. Bảng giá tham khảo
               </span>{" "}
-              <a href="#$">
-                <span style={{ color: "#0000ff" }}>0961 328 357</span>
-              </a>
             </h2>
             <p>
               Bài viết này Trung tâm gia sư Sư Phạm Biên Hòa xin cung cấp tới
@@ -724,200 +522,7 @@ export default function Home() {
               </tbody>
             </table>
             <br />
-            <br />
-            <h3>
-              <span
-                className="ez-toc-section"
-                id="Gia_su_day_kem_tai_nha_2_buoituan_tai_Bien_hoa"
-                ez-toc-data-id="#Gia_su_day_kem_tai_nha_2_buoituan_tai_Bien_hoa"
-              ></span>
-              <span style={{ color: "#800080" }}>
-                <strong>
-                  Gia sư dạy kèm tại nhà 4 buổi/tuần tại Biên hòa.
-                </strong>
-              </span>
-            </h3>
-            <table
-              style={{
-                borderCollapse: "collapse",
-                width: "95%"
-              }}
-            >
-              <thead>
-                <tr>
-                  <th
-                    rowSpan="2"
-                    style={{
-                      border: "1px solid #eee",
-                      color: "#008000",
-                      fontWeight: "bold"
-                    }}
-                  >
-                    Khối Lớp
-                  </th>
-                  <th
-                    colSpan="2"
-                    style={{
-                      border: "1px solid #eee",
-                      color: "#008000"
-                    }}
-                  >
-                    4 buổi /tuần
-                  </th>
-                </tr>
-                <tr>
-                  <th
-                    style={{
-                      border: "1px solid #eee",
-                      color: "#008000"
-                    }}
-                  >
-                    Sinh Viên
-                  </th>
-                  <th
-                    style={{
-                      border: "1px solid #eee",
-                      color: "#0000ff"
-                    }}
-                  >
-                    Giáo Viên
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {tableData2.map((row, index) => (
-                  <tr key={index}>
-                    <td
-                      style={{
-                        border: "1px solid #eee",
-                        color: "#008000",
-                        fontWeight: "bold"
-                      }}
-                    >
-                      {row.class}
-                    </td>
-                    <td
-                      style={{
-                        border: "1px solid #eee",
-                        color: "#ff0000",
-                        fontWeight: "bold",
-                        textAlign: "center"
-                      }}
-                    >
-                      {row.studentPrice}
-                    </td>
-                    <td
-                      style={{
-                        border: "1px solid #eee",
-                        color: "#0000ff",
-                        fontWeight: "bold",
-                        textAlign: "center"
-                      }}
-                    >
-                      {row.teacherPrice}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-            <br />
-            <br />
-            <h3>
-              <span
-                className="ez-toc-section"
-                id="Gia_su_day_kem_tai_nha_2_buoituan_tai_Bien_hoa"
-                ez-toc-data-id="#Gia_su_day_kem_tai_nha_2_buoituan_tai_Bien_hoa"
-              ></span>
-              <span style={{ color: "#800080" }}>
-                <strong>
-                  Gia sư dạy kèm tại nhà 5 buổi/tuần tại Biên hòa.
-                </strong>
-              </span>
-            </h3>
-            <table
-              style={{
-                borderCollapse: "collapse",
-                width: "95%"
-              }}
-            >
-              <thead>
-                <tr>
-                  <th
-                    rowSpan="2"
-                    style={{
-                      border: "1px solid #eee",
-                      color: "#008000",
-                      fontWeight: "bold"
-                    }}
-                  >
-                    Khối Lớp
-                  </th>
-                  <th
-                    colSpan="2"
-                    style={{
-                      border: "1px solid #eee",
-                      color: "#008000"
-                    }}
-                  >
-                    5 buổi /tuần
-                  </th>
-                </tr>
-                <tr>
-                  <th
-                    style={{
-                      border: "1px solid #eee",
-                      color: "#008000"
-                    }}
-                  >
-                    Sinh Viên
-                  </th>
-                  <th
-                    style={{
-                      border: "1px solid #eee",
-                      color: "#0000ff"
-                    }}
-                  >
-                    Giáo Viên
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {tableData3.map((row, index) => (
-                  <tr key={index}>
-                    <td
-                      style={{
-                        border: "1px solid #eee",
-                        color: "#008000",
-                        fontWeight: "bold"
-                      }}
-                    >
-                      {row.class}
-                    </td>
-                    <td
-                      style={{
-                        border: "1px solid #eee",
-                        color: "#ff0000",
-                        fontWeight: "bold",
-                        textAlign: "center"
-                      }}
-                    >
-                      {row.studentPrice}
-                    </td>
-                    <td
-                      style={{
-                        border: "1px solid #eee",
-                        color: "#0000ff",
-                        fontWeight: "bold",
-                        textAlign: "center"
-                      }}
-                    >
-                      {row.teacherPrice}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-            <p>
+            {/* <p>
               <span style={{ color: "#ff0000" }}>
                 <strong>
                   *** Lưu ý về bảng giá gia sư dạy kèm giỏi tại nhà Biên Hòa:***
@@ -997,8 +602,8 @@ export default function Home() {
                 </a>
               </strong>{" "}
               <strong>(Bấm vào số để gọi)</strong>
-            </h3>
-            <p>
+            </h3> */}
+            {/* <p>
               –{" "}
               <span style={{ color: "#0000ff" }}>
                 <strong>Thầy Trung</strong>
@@ -1009,8 +614,8 @@ export default function Home() {
                 <span style={{ color: "#0000ff" }}>Cô Phúc</span>{" "}
               </strong>
               (Chuyên ban xã hội)
-            </p>
-            <h2>
+            </p> */}
+            {/* <h2>
               <span
                 className="ez-toc-section"
                 id="5_Lop_Day_Kem_Tai_Nha_Tp_Bien_Hoa"
@@ -1020,8 +625,8 @@ export default function Home() {
                 5. Lớp Dạy Kèm Tại Nhà Tp Biên Hòa:
               </span>
             </h2>
-            <br />
-            <table width="700" style={{ width: "90%" }}>
+            <br /> */}
+            {/* <table width="700" style={{ width: "90%" }}>
               <tbody>
                 <tr>
                   <td style={{ border: "1px solid rgba(0, 0, 0, .1)" }}>
@@ -2361,8 +1966,8 @@ export default function Home() {
                   </Link>
                 </strong>
               </span>
-            </p>
-            <h2>
+            </p> */}
+            {/* <h2>
               <span
                 className="ez-toc-section"
                 id="6_Gia_Su_Bien_Hoa_co_doi_ngu_gia_su_uy_tin_va_giau_kinh_nghiem"
@@ -2416,8 +2021,8 @@ export default function Home() {
               thành học sinh giỏi, từ trung bình yếu các em có thể vươn lên để
               đạt học sinh khá.
             </p>
-            <br />
-            <h2>
+            <br /> */}
+            {/* <h2>
               <span
                 className="ez-toc-section"
                 id="7_Trung_tam_gia_su_Uy_Tin_Bien_Hoa_Chuyen"
@@ -2544,8 +2149,8 @@ export default function Home() {
                   </Link>
                 </strong>
               </span>
-            </p>
-            <h2>
+            </p> */}
+            {/* <h2>
               <span
                 className="ez-toc-section"
                 id="10_Danh_Sach_Gia_Su_Gioi_Tai_Bien_Hoa"
@@ -2999,8 +2604,8 @@ export default function Home() {
                   </Link>
                 </strong>
               </span>
-            </p>
-            <h3>
+            </p> */}
+            {/* <h3>
               <span
                 className="ez-toc-section"
                 id="Gia_su_Giao_vien_Chiu_Van_Thuong"
@@ -3487,8 +3092,8 @@ export default function Home() {
               quá trình dạy được nhiều em học sinh yêu mến. Có phương pháp dạy
               cho các em học sinh tiếp thu chậm. Tự tin với kỹ năng sư phạm của
               mình.
-            </p>
-            <figure
+            </p> */}
+            {/* <figure
               id="attachment_1354"
               aria-describedby="caption-attachment-1354"
               style={{ width: "725px" }}
@@ -3512,7 +3117,7 @@ export default function Home() {
               >
                 Liên hệ tư vấn gia sư Biên Hoà
               </figcaption>
-            </figure>
+            </figure> */}
             <br />
             <h2>
               <span
@@ -3520,16 +3125,16 @@ export default function Home() {
                 id="11_Lien_he_Trung_Tam_Gia_Su_Bien_Hoa_de_duoc_tu_van_mien_phi"
                 ez-toc-data-id="#11_Lien_he_Trung_Tam_Gia_Su_Bien_Hoa_de_duoc_tu_van_mien_phi"
               ></span>
-              <span style={{ color: "#008000" }}>
-                11. Liên hệ Trung Tâm{" "}
-                <a href="/" style={{ color: "#008000" }}>
+              <span style={{ color: "#008000" }} id="Lien-he">
+                4. Liên hệ (Zalo, Facebook, địa chỉ nhà){" "}
+                {/* <a href="/" style={{ color: "#008000" }}>
                   Gia Sư Biên Hòa
-                </a>{" "}
-                để được tư vấn miễn phí .
+                </a>{" "} */}
+                {/* để được tư vấn miễn phí . */}
               </span>
             </h2>
             <br />
-            <h2 id="single">
+            {/* <h2 id="single">
               <span
                 className="ez-toc-section"
                 id="%E2%80%93_Dang_Ky_De_Duoc_Tu_Van_va_Hoc_Thu_Mien_Phi"
@@ -3554,25 +3159,26 @@ export default function Home() {
                   </Link>
                 </strong>
               </span>
-            </p>
+            </p> */}
             <p>
               <span style={{ color: "#ff0000" }}>
                 <strong>
-                  <span style={{ fontSize: "25px" }}>
-                    Thầy Trung – Cô Phúc{" "}
-                  </span>
+                  <span style={{ fontSize: "25px" }}>Hotline tư vấn </span>
                 </strong>
               </span>
               <span style={{ color: "#1b78e2", fontSize: "25px" }}>
-                <a href="/">0961 328 357</a>
+                <a href="/">0975 248 259</a>
               </span>{" "}
               <strong>(Bấm vào số để gọi)</strong>
             </p>
             <p>(Làm việc 7h- 22h từ thứ 2 đến Chủ Nhật)</p>
             <p>
               Websites:{" "}
-              <a href="/" className="text-[#1b78e2] hover:text-cyan-800">
-                giasuuytinbienhoa.edu.vn
+              <a
+                href="https://www.giasugioibienhoa.com/"
+                className="text-[#1b78e2] hover:text-cyan-800"
+              >
+                https://www.giasugioibienhoa.com/
               </a>
               <br />
               Mail: giasuuytinbienhoa@gmail.com
@@ -3582,20 +3188,21 @@ export default function Home() {
               <span style={{ color: "#ff0000" }}>
                 <strong>Cơ sở 1:</strong>
               </span>{" "}
-              1298/89 Nguyễn Ái Quốc, Tân Tiến, Thành phố Biên Hòa, Đồng Nai
+              1334/10 khu phố 3, phường Tân Tiến, Biên Hoà, Đồng Nai (gần
+              Cooomart Biên Hoà)
               <br />
               <span style={{ color: "#ff0000" }}>
                 <strong>Cơ sở 2:</strong>
               </span>{" "}
-              1261/21 Võ Thị Sáu, Thống Nhất, Thành phố Biên Hòa, Đồng Nai
+              132/7 Bình Chuẩn 19, Thuận An, Bình Dương
               <br />
-              <span style={{ color: "#ff0000" }}>
+              {/* <span style={{ color: "#ff0000" }}>
                 <strong>Cơ sở 3:</strong>
               </span>{" "}
               66/107 Đường Nguyễn Thái Học, Trảng Dài, Thành phố Biên Hòa, Đồng
-              Nai
+              Nai */}
             </p>
-            <p>
+            {/* <p>
               <img
                 loading="lazy"
                 decoding="async"
@@ -3607,8 +3214,45 @@ export default function Home() {
                 srcSet="https://giasuuytinbienhoa.edu.vn/wp-content/uploads/2023/10/trung-tam-gia-su-Bien-Hoa.png 941w, https://giasuuytinbienhoa.edu.vn/wp-content/uploads/2023/10/trung-tam-gia-su-Bien-Hoa-300x153.png 300w, https://giasuuytinbienhoa.edu.vn/wp-content/uploads/2023/10/trung-tam-gia-su-Bien-Hoa-768x391.png 768w"
                 sizes="(max-width: 941px) 100vw, 941px"
               />
-            </p>
+            </p> */}
           </div>
+        </div>
+        <div className={styles.carousel}>
+          <Carousel showThumbs={false} infiniteLoop autoPlay>
+            <div className={styles.slide}>
+              <img
+                src="https://giasudaykemtainha.vn/uploads/posts/cach-tim-lop-day-gia-su-khong-qua-trung-tam.jpg"
+                alt="Giáo viên giỏi toán"
+              />
+              <p className={`${styles.legend}`}>Giáo viên giỏi toán</p>
+              <p className="text-left -ml-56 mt-20">
+                Cô giáo giỏi toán đã có những kinh nghiệm nhiều năm trước đã đi
+                dạy và học tiến sĩ sư phạm
+              </p>
+            </div>
+            <div className={styles.slide}>
+              <img
+                src="https://giasugiatri.edu.vn/wp-content/uploads/2024/08/Trung-Tam-Gia-Su-Bien-Hoa-1024x589.jpg"
+                alt="Giáo viên giỏi văn"
+              />
+              <p className={styles.legend}>Giáo viên giỏi văn</p>
+              <p className="text-left -ml-56 mt-20">
+                Cô giáo giỏi văn đã có những kinh nghiệm nhiều năm trước đã đi
+                dạy và học tiến sĩ sư phạm
+              </p>
+            </div>
+            <div className={styles.slide}>
+              <img
+                src="https://www.giasugioi.com/pics/giasugioi-banner-3.jpg"
+                alt="Giáo viên giỏi anh"
+              />
+              <p className={styles.legend}>Giáo viên giỏi anh</p>
+              <p className="text-left -ml-56 mt-20">
+                Cô giáo giỏi anh đã có những kinh nghiệm nhiều năm trước đã đi
+                dạy và học tiến sĩ sư phạm
+              </p>
+            </div>
+          </Carousel>
         </div>
       </div>
       <Footer />
