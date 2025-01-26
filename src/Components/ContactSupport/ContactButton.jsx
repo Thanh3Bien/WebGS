@@ -9,4 +9,4 @@ const ContactButton = () => {
   );
 };
 
-export default ContactButton
+export default ContactButton;
