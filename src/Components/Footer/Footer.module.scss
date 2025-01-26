@@ -2,6 +2,7 @@
   display: block;
   unicode-bidi: isolate;
   margin-top: 25px;
+  width: 100%;
 
   .siteinfo {
     text-align: center;
@@ -17,7 +18,7 @@
       &.gridcontainer {
         margin-left: auto;
         margin-right: auto;
-        max-width: 1200px;
+        max-width: 100%;
       }
     }
   }

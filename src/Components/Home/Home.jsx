@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Zalo from "../ZaloSupport/Zalo";
 export default function Home() {
-  
   const tableData = [
     {
       class: "Lớp lá 1,2,3,4",
@@ -1022,7 +1021,7 @@ export default function Home() {
               </span>
             </h2>
             <br />
-            <table width="700">
+            <table width="700" style={{ width: "90%" }}>
               <tbody>
                 <tr>
                   <td style={{ border: "1px solid rgba(0, 0, 0, .1)" }}>
@@ -2407,7 +2406,7 @@ export default function Home() {
                 sizes="(max-width: 1000px) 100vw, 1000px"
               />
             </p>
-            <p style={{ marginTop: "-400px" }}>
+            <p style={{ marginTop: "-50%" }}>
               Nhiệm vụ của{" "}
               <a href="/" className={styles.hoverWord}>
                 <strong>Trung tâm gia sư Biên Hòa</strong>
@@ -3283,9 +3282,8 @@ export default function Home() {
               <br />
               Học trường : &nbsp;<span className="tutor-info">Giáo viên</span>
               &nbsp;khoa&nbsp;<span className="tutor-info">Sư phạm Hoá</span>
-              &nbsp;trường&nbsp;<span className="tutor-info">
-                Đại học Đồng Nai
-              </span>{" "}
+              &nbsp;trường&nbsp;
+              <span className="tutor-info">Đại học Đồng Nai</span>{" "}
               <span
                 data-sheets-value='{"1":2,"2":"ĐH Cần Thơ - Đã tốt nghiệp."}'
                 data-sheets-userformat='{"2":513,"3":{"1":0},"12":0}'
