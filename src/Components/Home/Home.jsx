@@ -3197,7 +3197,7 @@ export default function Home() {
                 https://www.giasugioibienhoa.com/
               </a>
               <br />
-              Mail: giasuuytinbienhoa@gmail.com
+              Mail: giasubienhoa42@gmail.com
               <br />
               Địa chỉ trung tâm gia sư Uy Tín Biên Hòa – Đồng Nai:
               <br />
@@ -3244,7 +3244,8 @@ export default function Home() {
                 alt="Giáo viên giỏi toán"
               />
               <div className={styles.textContainer}>
-                <h3 className={styles.title}>Giáo viên giỏi toán</h3>
+                <h3 className={styles.title}>Trần Ngọc Thạch</h3>
+                <h6 className={styles.subtitle}>Nhân viên kế toán</h6>
                 <p className={styles.description}>
                   Từ ngày có gia sư kèm 1-1 tại nhà, con tôi học tập tiến bộ hẳn
                   lên, ngoan và chăm chỉ hơn. Tôi rất hài lòng về Trung tâm
@@ -3257,7 +3258,8 @@ export default function Home() {
                 alt="Giáo viên giỏi văn"
               />
               <div className={styles.textContainer}>
-                <h3 className={styles.title}>Giáo viên giỏi văn</h3>
+                <h3 className={styles.title}>Trần Thị Xuân</h3>
+                <h6 className={styles.subtitle}>Kĩ sư</h6>
                 <p className={styles.description}>
                   Cháu nhà chị mất căn bản tiếng anh, nhưng nhờ Trung tâm mà nay
                   điểm số cháu đã cải thiện nhiều và cũng đã giao tiếp được

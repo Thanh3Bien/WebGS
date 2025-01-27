@@ -18,8 +18,8 @@ export default function Privacy() {
                 Chính sách bảo mật thông tin khách hàng của trung tâm gia sư
                 Biên Hòa
                 <br />
-                <a href="/">http://giasuuytinbienhoa.edu.vn</a>/ (gồm cả nền
-                tảng website, mobile website gia sư Biên Hòa) sau đây gọi chung
+                <a href="/">http://giasugioibienhoa.com</a>/ (gồm cả nền
+                tảng website, mobile website gia sư giỏi Biên Hòa) sau đây gọi chung
                 là “Gia Sư Biên Hòa”, cam kết sẽ bảo mật những thông tin mang
                 tính riêng tư của khách hàng. Quý khách vui lòng đọc “Chính sách
                 bảo mật” dưới đây trước khi truy cập những nội dung khác để hiểu
@@ -131,14 +131,14 @@ export default function Privacy() {
                 Nếu quý khách có những thắc mắc liên quan xin vui lòng liên hệ
                 theo địa chỉ email giasuuytinbienhoa@gmail.com hoặc{" "}
                 <a href="/">
-                  tổng đài tư vấn gia sư&nbsp;Biên Hòa&nbsp;0961. 328. 357
+                  tổng đài tư vấn gia sư&nbsp;Biên Hòa&nbsp;0815062700
                 </a>
                 .<br />
                 Trung tâm gia sư Uy Tín&nbsp;Biên Hòa
                 <br />
-                Website: <a href="/">http://giasuuytinbienhoa.edu.vn/</a>
+                Website: <a href="/">http://giasugioibienhoa.com/</a>
                 <br />
-                Cập nhật lần cuối vào lúc 11h00 ngày 01 tháng 01 năm 2020
+                Cập nhật lần cuối vào lúc 11h00 ngày 01 tháng 01 năm 2025
               </p>
             </div>
           </div>
