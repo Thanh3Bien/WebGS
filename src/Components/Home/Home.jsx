@@ -156,6 +156,21 @@ export default function Home() {
                       4. Liên hệ
                     </a>
                   </li>
+                  <li>
+                    <a
+                      href="#5"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const section =
+                          document.getElementById("Danh-gia-phu-huynh");
+                        if (section) {
+                          section.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }}
+                    >
+                      5. Đánh giá phụ huynh
+                    </a>
+                  </li>
                 </ul>
               </div>
             )}
@@ -3218,6 +3233,9 @@ export default function Home() {
             </p> */}
           </div>
         </div>
+        <h1 className="ml-9 text-[#008000] text-3xl" id="Danh-gia-phu-huynh">
+          5. Đánh giá của phụ huynh
+        </h1>
         <div className={styles.carousel}>
           <Carousel showThumbs={false} infiniteLoop autoPlay>
             <div className={styles.slide}>
@@ -3228,8 +3246,8 @@ export default function Home() {
               <div className={styles.textContainer}>
                 <h3 className={styles.title}>Giáo viên giỏi toán</h3>
                 <p className={styles.description}>
-                  Đội ngũ giáo viên giỏi toán sẵn sàng giúp bạn vượt qua mọi bài
-                  toán khó khăn.
+                  Từ ngày có gia sư kèm 1-1 tại nhà, con tôi học tập tiến bộ hẳn
+                  lên, ngoan và chăm chỉ hơn. Tôi rất hài lòng về Trung tâm
                 </p>
               </div>
             </div>
@@ -3241,21 +3259,8 @@ export default function Home() {
               <div className={styles.textContainer}>
                 <h3 className={styles.title}>Giáo viên giỏi văn</h3>
                 <p className={styles.description}>
-                  Giáo viên văn học sẽ giúp bạn nắm vững mọi kiến thức văn học
-                  từ cơ bản đến nâng cao.
-                </p>
-              </div>
-            </div>
-            <div className={styles.slide}>
-              <img
-                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEhUSEhIVFRUVGBUVFRUXFRUVFRUVFRUWFhUVFRYYHSggGBolHRUVITEhJSkrLy4uFx8zODMsNygtLisBCgoKDg0OGxAQGislICYwLS03LzUtLy0tLS0tLS0tLy0tLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKy0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAQQFAgMGBwj/xABFEAABAwIDBQQGCAIHCQAAAAABAAIRAyEEEjEFQVFhcQYigZEHEzKhsdEUI0JSYpLB8ILhM1Nyc6LS8RVDRGODk6Oywv/EABoBAAIDAQEAAAAAAAAAAAAAAAABAgMEBQb/xAAqEQACAgEEAQMEAQUAAAAAAAAAAQIDEQQSITFREzJBBSNhcSIzYqGx8P/aAAwDAQACEQMRAD8A9PAWYCAFkuAbwCyCQCyCYgTQmmiIwnCSyCkAIQhAhoQhAwQhCABCaECEmhCYCQmkkMEIQgASTQgBITSSASITSSAxKE0JDMShMpJDEkmkUgEkmhAGIWQSCYUgMgmkmECGmEkwpCGmkmmAIQmgAQhNACTQqza238Lhf6aqAfujvP8Ayi48UwLNC4PEelTBtMNpVnc/qxPgXyr3sr2sobQDsgdTc3Vj8uaDo4FpIIT2tLIYL9CEJCBCEIAEIQkAkJoQMSEISASE0kAIoTSSASRTSUSQkk0kgEhEIQBiFkFiFkpACySQgQ0wkmpCGmEgmgBoQhMBoJQuU9J20nYfAVchh1SKQPAO9qP4QfNCGlk4/tn6SXPqOoYN+Wm2Q+sPaqHf6s/ZZ+IXO6BBPGYgOeBJiZJJuSTvPFUGGcA7NY8zu8PmrvDYwFtru3uPwn99FsjBRJZIeILGCIJ8B8CE9nbYdQeH0axpPEEESLjc4GxHK45LTtSnHEnW+7wVQ5pnT/RWqKfZW3g999Hvb12NcaOJDGVQJYW2FQb7E69OOi75fKeAlhBBLSCCIsZG8c19R7NxjK1NtRjg5rgLjesdsFF8D+MklCEKsiCEISGCEIQMEkISAEk0kACSaSQAkmsSkMEk0lEYoQhCAME1impAZJrEJoAyQkmmIacrFMFMRkmsUwgBryf03ba/o8IBpFZ53XD2taPInyXpm1NpUsNTdVquDWN1PwAGpPILwHt3tpmOxL6wloLWtaHRo3SYnUyfFW1LMhrycr60c/NWGFxjWC46DXx681VhsXkcljmJM/zW7aGTqKdanV1HMqM3BTndGug+60TZV1EPa3Po2fNSsNtEggHelkWDXTpnP0gdNV9A+jhsbPw5giWAwb20aRyLQ0ryDsxsZ+Oq5GghgIL3xYNHDmbwvfdmUG06VNjBDWsa0DgGiAPcslzy8E5LESShCFUVghCEgBCEIGJCEJACSaSABCEkgBIprFRGCSaSQxIQhAGqU1inKYGSEpQgDKU5WKcoAyTWErKUxGQVbtvbmHwjM1ao1k2aCe848GtF3HkFPqVA0EnQX/c6LyLt12va6oTR1a0N9Z3Wj7UZC9pc8d+ZAANt1zOMXJ4Q0vJU9tu2D8ZVyhrmU6dw11iSdC4bum5ee42u5zieJUytWJmXFziSXE6knieqr3CYG+66NUFFELJZ4Oh2rsOi2kypTc/NUYKgYYILSZgReQ256FbOynZ1+Kdpla3fx6K37MYxzcO2lWpk5CTSePaaCTLXA6iHOEg6GIIAXX7CoijMRczbgqpWPDRdGtNpnJ9ptjGk1rGNOUDrJWGwuxdaqWuqUqrWuMk5csNHDNFzdervwYqtlhDXagwDB6JYXCYkD6+rTLWzAaxwLjoJJcYG+I3KlTeC5xWTVkw+Dotose3DtMS4luczAGUutmJgSZ6Lp9jMa2hTDA4DKDDpzXuS7NeSZMnWVBZTa8M7oc7QEgEgjfyVy1sADhAVbZVazJCElEpBCEIAEIQkAISQgAQhBSAEkISGJJNJIYJISSAJSTSQBplErFEoGZyiVhKcoDBslCwBTBQIzTBWEraxu9X0UStlhFdtsa1lkHamDNdrWSMmYGo0iRUYA4hnQvyE8QCN68+7R+j5uStXfVqVKr3FwytAAF4YG3tfXluXqZcForCRC7VGkhWvLOVbq5y64R4TS9HlcgZnhsgSAO8PE/JbW9j2UTYTG8r13F7ODtDlI0PmqbE7IqHWDzC52pco2OK6O1o2p1RlLs4dmFIcBFgugwJA7pUirshwI7qjYvDuYFlUzXtL/BOLdDZZ47E03x9cwObPdJEX4iQZXObHx1Uk5x3Rod8c10VXDgjMQdw4TOgMLRXU7faim2+FPNjwTMBXflbBHIgRPHXcr6jUzDmqahTDSeDGgfq74BWGCeSY5X6ncuhqNLCNPHaOFVq5WX5fTJsoSQuMdUaEkIAaSEJACaxlBcAYkTrG/wAkYb5AaFWbT2/hMMYrVmMOuW5d+VslV2G7c7NqODBiWgkwM4cwE8JcAEbW+cAdGklmCFEYIQkkMCkhIpACEkIGRpRKwlOUAZyhYSnKQGcpysJSMmw8eitprdk1FELbFCLkzcwrbm4rUCGqNWxEz0XpKdPGuO2JwLr3J5kSPWXPABOmSVAw9fMXcIaPGMx9xarKgLK+SwZ4S3DpMB14LGpRAWxgTcVyNXDE8+TvaGzNePBEfQBUHEbPa7crYkLVUWFwydFWYKAbJAI636Dd+isHUZy8iD5X/Qealso+Z/cLTtDu0zFjZo6uIE+9dvR0+lDD7Z5z6hqPWs3fCMAC4xu9oxvO7oNFPwjYPgoWHFhGnH5KbhxBUta/tSK9EvuJkmUSlKJXnDvjQkhLIDUXaO0KWHpuq1XhrG6k+4AbyeCkErwvtz2pONxByOPqKRLaQ3OOjqpG8mIHAdSrK4b5YB8Hc0PSTQrVfUepqMY8tbTqnJZxdGZzfstEh030Oi8/7RekjaFV1SnTqtpMDnNBpCHvaCRmNS5vEy2NVLo4tuEoV6feFd/qsrwYLIkvgxIEWPVcPR2cc3e0C3ww44S4IzWzvslU6rg3M8kzedSTxM6rW0Z7yI8PIyni6hkN0HHcVKp0C0WYTPW46q3jop5Os7J9va+Eb6pzDWpDRsw9g/ATqORtzC9a2FteljKLa1Iy124xmaRq1wBseS8H2ThnBtYupOa00nZXOaYmRYE2vccV0foU2nU+lV8OfYew1YtZ7HNbI5EP9wWLUUrDki6EvhnsqRQkSsJYBSKCkgYIQhAEKU5WEqPSxrXPdTuHN3G0jcW8QpRhKWdq6FKajjPyS5QCsJTlQJGxolN1ZrNT8kBjgJAk8OI3hPK1wzMOu4/I713vp+mUI75LlnF12pcnsj0RKtabyOigbRxPqqb3nQNcZUyseXuVbjcKKtOpNmNY8ncC4NMA8gYJ6RxXSstjVHdI5ca5Wy2okdm3ZqFMk3LWuM6y4Zv1jwXQUXTZcpsDH4cta19iAAOEDRdU1o1aU5vJKpbeDc4LU9y2ZlHrED+VlQ61NYkjQrZVvMWa67BxPwTosHX98U2Mm7tFIo3vu3IjTXDpBO+23iTGGqu2o3MWNmwOc8w0QB+Zw8lZvKr6DC+q9+5sMb1El5/xAeBVkfJVYsraOi07xHlot9J8OjfC2OaVhTaJJ8PDX9Vl100qXk16KH3EbpRKxlMLzyy+EdwaFlliOv6KNtCrlYSPDmdAPOFthopNcvBW7Ecx6T9tHC4J4aYfV+qbx73tEfwz7l4N9I9WWmJylpj71wSPHRdl6TMa6piGUy4uyjedC7+QB8VyeyMH9IxFKnue8Dwkn4K2FSqTH7mkX2PrPrNFX1L4MmYO/QTEkAWVGMfFizTivffojKdGMogACI3LxLtdhCKtQkAEEiAI8Y3DmVGmeeC2+v5McPiGkWA6blC2h6xuhIB3AmFWYbFlhV8HB7LrSkY2yNgto1HNewuJBbpzFx8Auq9CTHOx1R8WbRcCb2zPZHLcdeHJc1g8OGXO/wCC9b9EeyvUYNzyBNao50/gYcrPg4+Kz6l7YY8llfLyd1KRRKRXMLwQhJADQsZQkBXytdSm0ua6BmbOU7xOo5hZSqrFbRoubLnlrXWa6csjc5pKnCLZNJN4ZcNOYSPET8Ew4tMluYb4dDh/CRB85VLgxVbdlZlVhFp7rvMSD7lJbtHvBtRpZmOW83PAEG600qNctzWf2Ru07sjhPBdUq9MzldpqLhw6tN1V43ENYc32HWfyJsHj4Hz4rTjMaA/I72mjMx29waBmA/EAQY3g87Rqo+kNc1hHebd2rQHSJ662XpHKMI75Pg8liVk/TXZLbRL3RJyjW58gt+0aAdReycgym+4AXM8rLZgcMWsawZnZQBMG/NaNslzab2eqquLmOHdpvIEtIEkCP1XntRqJ32prpPg9DptNGmvD7xyc5sASJLR14LrcHXgarj9j0KjhqQArRtV7TlbLzwaC4+QXolzHk8+1iTwdSK4IWo1GC5VD9McDBBB+64EHyKk0Xl2uiaiiMrH0WdNxqHkpbqwbYKlrbUa3uU7neeCKDHkZnGEOGewVmOuy0q4oAXsBqsNnPa2mCbZpdfWXHMbcbrmNpbTa+oyg0zndlcZ3akeQXWYfD/fMnho0cg35ylNKKCuUpSMziWHeR1DmjzIWFM3P7/eq2uw7dwy9Lf6+KguxIpgh2oJAA+0LEEcBBHTTgudr/wCi8HT0Kl6uJE9jCVua2FT7N2r9ZkqEAP8AYGkObJIvrIv/AAq1dXabAieCz6SuCjuXZ1LVJPDHWfaevwVPtivYToC0noIJ+a34/ElrXDx+aodsYsOLWA3dkj+IX9wctpWkePdr6+bG1jOjsviBlPvDlF7J1xTxdF53OE+8H4rpewO0Nn1sZiKOLpNd9Kz+rqu9puYuzMbua4gggi8gidFDp9kcRQxtaiWkimC+nUg5XtLhlIItMEyOMrNOGV+yVc/uYx0es4uuyrSIze0CD0K4PtRsapiac901QIDwf6Vo+9wP6qzwQqZQJJ3OYReNDEjUe/3qwxGLFRoDgGxqYifDcsahOL4R0pbJLDPCamHcLkEXIuDqNR1UjD4tzen70XX9s9sUKUsY3O47iPqxG8yNb7vNcW0Z76b4WuLbWWjnzgk8Jk52MLvFey+iDa3rsI+kdaFQgf2Hy5vvzjwXhpJGgv8ABeueg3CGnQxNZ9g57G3/AOWxzif/AC+5U3VuyOEEOD1FCiYfaNJ+joPB1j8j4FSiuWy9poEilKSiA0LFCAKfHBxpVAyMxY8NnTMWkCfGFz+zsTVY1oZENAaWFxDu6IIAiD5hdVh6BeYGm88FY0MJTYSWtAJ1MCT1K26eEpRx8EXYoSycscQIzPbB4jKHeOU36GVIwuGq1XAmTTBBHdBe4g/hIA6x5rp20wLwJ6Afot0nifNao0rPIpahtcIrNkbIZTzAte8Zi9nrg176ZI7wFQjMRc6ybm5VrSwzGiGsa0DcAAPcksgFp3ZWDHtSeTaGrErUabTyPESD5hZl8C5k6DQE/wA0ZHgibQ2fTrC7sjjHeaWh3MGbHxFlIwWBp0W5abco1OpJPFzjdx6rWKYNy0eN1sbSA0EdCR8Cn6jxgj6UU845Ntak14hzQ4cCAfiq/EbDoPEQ5v8AZe4fGynhxCefkmrGumRlTGXaKij2boM0L/Et/wAqh4+nTqQ0GoAdAC2XeGWQPFTds7ap0QQ6RuJkCJtKpW7Qe8TTYY+84lrT1eRJH9kFUXaufUZF+n0FWMyijPB7Cw9OoKoYQ9slpL3uiRGhOU68FYfTHtMZj+niNFppDRznZjuDZyjoNXHmfcteMeNSIjXf8FllbZLuTNcaKodRRcDEB4adMwNubYDgPzBcm/FA4utfQtaBwytAP+LMjEbddnwTWsINWsXZHAte3DltVj3ua67fZDoOkhbn9mX4rFVcRSrhjczGkFheHFtKnmIIcI3DwK22qU6kn2YadkL210WDS1wusKmDzCMxHAg3aeLTuKns2FVaPaY78zfmk7Z2IH2Wno/5gLEq7YdHQ9WuXbK6vgqj25TUnW5An3Qq7E7Be7SrEUvVA5JghpaH+1zmOWqvhQxAN6Lz0NM//S2OeYvSqD/pvPvAIVincRfp/g5fsd2IwmBdmY0vqR/SvILxybaGDoJ4krrK5rT9WWnix4iebXDS02g+Cgf7RpUycwe2d/qa0eeRM4lxaQwioCDldcFp3BxAv5Ta/FRUZN8g9q6MauCD5fEFxJPIyfBVG0dnPdZgI58RwMqxw+GxkWdSHLvx1JiVKdhMXq51LLaSC8kDeYgTZdJYisMzb8s8l7WdmHNc52UvOR5OVpMRF4Gg7y87NSpSdFRrmng5paQDvgr6kD2MjK3MDvkXPEz8FD2ph8PimZcRQY8SY9Y0EjpmHwWWVvPRJpP5Pm2ltMAHuiSbDgOC9g7P7UFLCUqDGkuPfqZQSATcgnrH5V0WE2LgaPsYamz8TaQH/qJVrhcNRd7Hva4e8gKmyx4aSLa4KLyygomo/wCxHX5BWuDNWn9qR906eHBWgwg3R+qyqYCG5ibcN4WJwS7Zolcnw0KjWDhI8RwKzJUJuJoMMZoJtoRPQxBWTsW0ECdbatSjRKfs5KZvZy08folIRl5t80KhtJ4bI+pHyRKfaCg0QKVYD+6csa/a3DMEuZXj+5efcAttLET1WOIrQPFdWE20sP8AwUtJdoranpEwLdW1/wDsVB8QtlLt7hHkhrKpI17kfErb64cFJpOBJsPJWPdjsX8fBFPbWh/VVfJn+ZaKnbVv2abuhA+OdWppMOrG+QWt2zqJ1YPh8FVm3yS/h4K3aPbcMpZqdFxqmQGvIYwEEiS4SSN9hv3Lybb+F2nj6wxFXFtzsM02s9YxlLh6uBY89ea9lx+Ao1G+rcwFo0HDmDuK4raPY7EioBQqnId7newPxDf4LTXl+5lNkse1F52S7V4kUsmPpk1GQG1acFtUcXC2V3G0H3K4b21wm/OP4f5qNsfYNPD0yz2y723OuXfIclK/2ZQ/qqf5G/JNpEd0n4Ee3ezxrVI/gd+izZ262Yf+IA6teP0SGAoD/dU/yN+SzGGoj/dU/wArfko8kkys2ztvZuIEtxVIOAMSPnoVyrdstDvrKzniL5MsT1urztDjA2WU2sbb7gF+RXL/AELM76xpHMSb8/5KicE3yaqrJRWDo9n7ep5JpuawTBzv78C2hvHkpmI2pQcGsY4uc/2nsN2galpB7vgufwuzQG9wB4k3Ive9zr5q72ZgKbGhwblJtHLkqJ4j0aE3KPJnTo/WUzOZtW0kd8XdYnf7Nwu22Y+lTYG5mgmbSByFugCo6WHa0U3RfvO8TIHuJPitVak14IcJ4z5rV6kq61J8nOUYyscUdZ9Kp/fZ+ZvzTFZh+038wXEYTY7A8vN7Q0HdPtE8eHmtz8K0GQBP70WiuTlFNkpVpPCZ2eZvEeYTkcV5ttLDEhxjl7lUbWY5hJYS0wAI5tgW6keSnjgjs/J7AgheN9ku0YrHJUgVI3TDhx5HkumrPqT9W3MeJNh0A1KoduH0WqjPTO9LOS11MO06j4rxnFbTrMe8ZzZxA7xGh33WmntfEyHCo6x3Pdu9yt3rBD0JHo+08CYzNsGSQc+4Tui+9acBiswhzhujcqVu3HAG5e38PeHiNyhs2rmeRTGUCNSRMibDRVZi30N1/LOlxja4vTaHcZJ5cTBU3C40Fn1lB0xctaLHq1c0NpVspyniN8j9Cns3a+LpFwyh5sbmCOo5quemjLnJGuuKluy/1k17UYHtY4vZTc10+sLScwj2XGwjQ3O5XmCx9YU25S14Ed8d6YG+CqnGYnE1qjqoaxuZuVzNREQXGQJJnmovZ/AYzDgCjUDuAqCbX3tjidYWTUaSh15j7vz0brNVGSUeMf6ZK2lWDjDxVJc/MwNhoLuLHSOOkp7Lo0MQ4lj3te1xBa+QQ4G4sSNVV4/CYnIBWLixr84LWnuOg3Jabaneqgvp06hAqBr3Gbsewv4ltTQ9YWnR6G6UeEsfgrn9Tqgtu7H/AHg7jFhtN5Y9zcw1vxvPvQqOnXeQCWk88zTPiktL0H9iMq+q6THaOjrDum8W1Gsi4VZtDbJawSyTI0IHxSQuRVNp8GtRT7McDtsb6fS8qwwW2KdSo8Na4AOIkxcgmd/JCFrc3tIuuKLP1rQJP7lbQ9NCvUVhGNzZVYvHBs3A8z7oHxUTDbZY0OnNBIaSQCe9o6OoNkIWtVx25MM75qeCzbVIExI3EG3kUfSRw95+SEKUK4tjsulGOUYvxI+771FG0LwWjzKELSqIeDDLVWv5Ie0aTXxmaI4j3SoJw7miAQWncdPDghCxayuMcYOr9OtnNNSecEmi0SABHjI81dYWgHQTccOP8kIWOqEZ2JM26icoQyiXWI1UKpYeN/IIQp6/iozaPmw1teQpTnSEIWfQzk8xfRtuS4ZDxbO5HD5hUO1qdxxmfIE/GEIXTRSzk+z20aOEbXcW5q1xTt3SNB0g3VPh8bUc+S50uMkhxFzdCFVN8IhVHE2XNHD75nkeJ3niplfDinF+qELPnk3NcG2pLSXBxINx+/BbaGJY53fBncR7XjuQhWOKM+eCfQxTZDQXQbDM0RM8jPiuX7Qdn3U6/wBJbWiX+z3gTILoztIIENI6AIQqpzcZJIjFJps67ZuPf9HFRzA4hwZnzGdJvvPW5VtgMZUzOim1otbMSZjWZQhUahLHKKIxW9k51SpOaLxHtHQ8eKhU6REdxgiwgaJIRp5uK44LowjnOCSAePuQhCt9SXkl6cfB/9k="
-                alt="Giáo viên giỏi anh"
-              />
-              <div className={styles.textContainer}>
-                <h3 className={styles.title}>Giáo viên giỏi anh</h3>
-                <p className={styles.description}>
-                  Học tiếng Anh với đội ngũ giáo viên tận tâm, giúp bạn giao
-                  tiếp tự tin và hiệu quả.
+                  Cháu nhà chị mất căn bản tiếng anh, nhưng nhờ Trung tâm mà nay
+                  điểm số cháu đã cải thiện nhiều và cũng đã giao tiếp được
                 </p>
               </div>
             </div>
