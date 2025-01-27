@@ -2,7 +2,8 @@ import React, { useRef } from "react";
 import styles from "./Register.module.scss";
 import Header from "../../Header/Header";
 import emailjs from "@emailjs/browser";
-export default function Register() {
+import Zalo from "../../Components/ZaloSupport/Zalo";
+export default function Register({ showHeader = true }) {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -25,7 +26,7 @@ export default function Register() {
   };
   return (
     <>
-      <Header />
+      {showHeader && <Header />}
       <div className={`${styles.container}`}>
         <form
           className="rounded-lg p-8 max-w-lg mx-auto"
@@ -135,6 +136,7 @@ export default function Register() {
           </p>
         </form>
       </div>
+      <Zalo/>
     </>
   );
 }

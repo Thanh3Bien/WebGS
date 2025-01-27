@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Zalo from "../ZaloSupport/Zalo";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Register from '../../Components/RegisterCourse/Register';
 import { Carousel } from "react-responsive-carousel";
+import img2 from "../../assets/bien-hoa-vo-van-kieu-toc-dep-tre-trung-cho-phu-nu-trung-nien-6.png";
+import img1 from "../../assets/QC1-1024x1024.jpg";
 export default function Home() {
   const tableData = [
     {
@@ -3187,7 +3190,7 @@ export default function Home() {
               </span>{" "}
               <strong>(Bấm vào số để gọi)</strong>
             </p>
-            <p>(Làm việc 7h- 22h từ thứ 2 đến Chủ Nhật)</p>
+            <p>(Làm việc 24/7)</p>
             <p>
               Websites:{" "}
               <a
@@ -3196,9 +3199,23 @@ export default function Home() {
               >
                 https://www.giasugioibienhoa.com/
               </a>
-              <br />
+              {/* <br />
               Mail: giasubienhoa42@gmail.com
-              <br />
+              <br /> */}
+              <br/>
+              <span style={{ color: "#0000ff" }}>
+                          <Link
+                            style={{ color: "#0000ff" }}
+                            to="/register"
+                          >
+                            Đăng ký ngay hôm nay – Cơ hội học thử miễn phí
+                          </Link>
+                          </span>
+              <br/>
+              <div>
+                <Register showHeader={false} /> {/* Không hiển thị header */}
+              </div>
+              
               Địa chỉ trung tâm gia sư Uy Tín Biên Hòa – Đồng Nai:
               <br />
               <span style={{ color: "#ff0000" }}>
@@ -3240,12 +3257,13 @@ export default function Home() {
           <Carousel showThumbs={false} infiniteLoop autoPlay>
             <div className={styles.slide}>
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYHHhICo9Gm_mK_xoq0Sy6QXnxk_GoJFgK2Q&s"
+                // src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYHHhICo9Gm_mK_xoq0Sy6QXnxk_GoJFgK2Q&s"
+                src={img1}
                 alt="Giáo viên giỏi toán"
               />
               <div className={styles.textContainer}>
-                <h3 className={styles.title}>Trần Ngọc Thạch</h3>
-                <h6 className={styles.subtitle}>Nhân viên kế toán</h6>
+                <h3 className={styles.title}>Trần Văn Chính</h3>
+                <h6 className={styles.subtitle}>Kĩ sư</h6>
                 <p className={styles.description}>
                   Từ ngày có gia sư kèm 1-1 tại nhà, con tôi học tập tiến bộ hẳn
                   lên, ngoan và chăm chỉ hơn. Tôi rất hài lòng về Trung tâm
@@ -3254,12 +3272,13 @@ export default function Home() {
             </div>
             <div className={styles.slide}>
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR_OLhU8gnFJOP2LbkbDbjCD3CYaqYqVjnPg&s"
+                // src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR_OLhU8gnFJOP2LbkbDbjCD3CYaqYqVjnPg&s"
+                src={img2}
                 alt="Giáo viên giỏi văn"
               />
               <div className={styles.textContainer}>
-                <h3 className={styles.title}>Trần Thị Xuân</h3>
-                <h6 className={styles.subtitle}>Kĩ sư</h6>
+                <h3 className={styles.title}>Trần Tuyết Xuân</h3>
+                <h6 className={styles.subtitle}>Nhân viên kế toán</h6>
                 <p className={styles.description}>
                   Cháu nhà chị mất căn bản tiếng anh, nhưng nhờ Trung tâm mà nay
                   điểm số cháu đã cải thiện nhiều và cũng đã giao tiếp được
