@@ -376,7 +376,8 @@ export default function Home() {
                     style={{
                       border: "1px solid #eee",
                       color: "#008000",
-                      fontWeight: "bold"
+                      fontWeight: "bold",
+                      textAlign: "center"
                     }}
                   >
                     Khối Lớp
@@ -385,7 +386,8 @@ export default function Home() {
                     colSpan="2"
                     style={{
                       border: "1px solid #eee",
-                      color: "#008000"
+                      color: "#008000",
+                      textAlign: "center"
                     }}
                   >
                     2 buổi /tuần
@@ -395,7 +397,8 @@ export default function Home() {
                   <th
                     style={{
                       border: "1px solid #eee",
-                      color: "#008000"
+                      color: "#008000",
+                      textAlign: "center"
                     }}
                   >
                     Sinh Viên
@@ -403,7 +406,8 @@ export default function Home() {
                   <th
                     style={{
                       border: "1px solid #eee",
-                      color: "#0000ff"
+                      color: "#0000ff",
+                      textAlign: "center"
                     }}
                   >
                     Giáo Viên
@@ -473,7 +477,8 @@ export default function Home() {
                     style={{
                       border: "1px solid #eee",
                       color: "#008000",
-                      fontWeight: "bold"
+                      fontWeight: "bold",
+                      textAlign: "center"
                     }}
                   >
                     Khối Lớp
@@ -482,7 +487,8 @@ export default function Home() {
                     colSpan="2"
                     style={{
                       border: "1px solid #eee",
-                      color: "#008000"
+                      color: "#008000",
+                      textAlign: "center"
                     }}
                   >
                     3 buổi /tuần
@@ -492,7 +498,8 @@ export default function Home() {
                   <th
                     style={{
                       border: "1px solid #eee",
-                      color: "#008000"
+                      color: "#008000",
+                      textAlign: "center"
                     }}
                   >
                     Sinh Viên
@@ -500,7 +507,8 @@ export default function Home() {
                   <th
                     style={{
                       border: "1px solid #eee",
-                      color: "#0000ff"
+                      color: "#0000ff",
+                      textAlign: "center"
                     }}
                   >
                     Giáo Viên
