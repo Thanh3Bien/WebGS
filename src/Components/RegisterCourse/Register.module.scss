@@ -2,6 +2,11 @@
   width: 100%;
   background-color: #f3f4f6;
   height: 100vh;
+  @media (max-width: 768px) {
+    height: auto; // Đặt chiều cao tự động trên thiết bị di động
+    padding: 20px; // Thêm padding để nội dung không chật chội
+    
+  }
 
   .buttonText {
     background: #242226;

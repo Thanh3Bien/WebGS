@@ -28,7 +28,7 @@ export default function Register() {
       <Header />
       <div className={`${styles.container}`}>
         <form
-          className="rounded-lg p-8 max-w-lg ml-[146px]"
+          className="rounded-lg p-8 max-w-lg mx-auto"
           onSubmit={sendEmail}
           ref={form}
         >

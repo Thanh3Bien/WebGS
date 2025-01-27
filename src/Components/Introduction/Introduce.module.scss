@@ -8,6 +8,12 @@
   border-right: 2px solid rgba(0, 0, 0, 0.07);
   border-bottom: 2px solid rgba(0, 0, 0, 0.07);
   box-shadow: 0 0 10px rgba(232, 234, 237, 0.5);
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 90vw; // Đặt chiều rộng 100% trên thiết bị di động
+    margin: 0; // Bỏ lề trên và dưới
+    padding: 10px; // Thêm padding nếu cần
+  }
 
   .entryheader {
     display: block;
