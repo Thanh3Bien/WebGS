@@ -1,0 +1,29 @@
+.smsButton {
+    position: fixed;
+    bottom: 360px;
+    right: 20px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #e0e0e0; /* Màu nền khi hover */
+    }
+}
+
+.smsImage {
+    width: 40px; /* Kích thước biểu tượng */
+    height: 40px;
+    margin-right: 8px; /* Khoảng cách giữa biểu tượng và văn bản */
+}
+
+.smsText {
+    display: none;
+    font-size: 16px; /* Kích thước chữ */
+    @media (min-width: 769px) { 
+        display: block; 
+      }
+}
+@media (min-width: 769px) {
+    .smsButton {
+        display: none; /* Ẩn nút khi màn hình lớn hơn 769px */
+    }
+}

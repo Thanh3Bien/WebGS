@@ -7,6 +7,7 @@ import Privacy from './Components/Privacy/Privacy';
 import ContactButton from './Components/ContactSupport/ContactButton';
 import Map from './Components/Map/Map';
 import Messenger from './Components/MessengerSupport/Messenger';
+import SmsButton from './Components/SmsButton/Sms';
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
       <Map />
       <ContactButton />
       <Messenger/>
+      <SmsButton/>
     </>
   );
 }
