@@ -27,40 +27,38 @@ export default function Privacy() {
                 vệ quyền lợi của người truy cập:
               </p>
               <p>1. Thu thập thông tin cá nhân:</p>
-              <p>
-                – Các thông tin thu thập sẽ giúp chúng tôi:
-                <br />
-                <ul className="list-disc ml-4">
-                  <li>Hỗ trợ khách hàng khi liên hệ tìm gia sư</li>
-                  <li>Giải đáp thắc mắc khách hàng.</li>
-                  <li>
-                    Cung cấp cho quý khách thông tin mới nhất của chúng tôi cũng
-                    như gia sư dạy kèm tại nhà.
-                  </li>
-                  <li>
-                    Xem xét và nâng cấp nội dung và giao diện của website.
-                  </li>
-                  <li>
-                    Thực hiện các hoạt động quảng bá liên quan đến các sản phẩm
-                    và dịch vụ của Trung Tâm Gia Sư Biên Hòa.
-                  </li>
-                </ul>
-                – Để truy cập và sử dụng một số dịch vụ tại website và ứng dụng
-                của chúng tôi, quý khách có thể sẽ được yêu cầu đăng ký với
-                chúng tôi thông tin cá nhân ( tên, Số điện thoại liên lạc,
-                Email, và các thông tin về học sinh…). Mọi thông tin khai báo
-                phải đảm bảo tính chính xác.
-                <br />– Chúng tôi cũng có thể thu thập thông tin về số lần ghé
-                thăm, bao gồm số trang quý khách xem, số liên kết (links) quý
-                khách click và những thông tin khác liên quan đến việc kết nối
-                đến Gia sư dạy kèm tại nhà Uy Tín Biên Hòa. Chúng tôi cũng thu
-                thập các thông tin mà trình duyệt web (browser) quý khách sử
-                dụng mỗi khi truy cập vào website Gia Sư Biên Hòa, bao gồm: địa
-                chỉ IP, loại browser, ngôn ngữ sử dụng, thời gian và những địa
-                chỉ mà browser truy xuất đến.
-                <br />
-                2. Sử dụng thông tin cá nhân:
-              </p>
+              – Các thông tin thu thập sẽ giúp chúng tôi:
+              <br />
+              <ul className="list-disc ml-4">
+                <li>Hỗ trợ khách hàng khi liên hệ tìm gia sư</li>
+                <li>Giải đáp thắc mắc khách hàng.</li>
+                <li>
+                  Cung cấp cho quý khách thông tin mới nhất của chúng tôi cũng
+                  như gia sư dạy kèm tại nhà.
+                </li>
+                <li>Xem xét và nâng cấp nội dung và giao diện của website.</li>
+                <li>
+                  Thực hiện các hoạt động quảng bá liên quan đến các sản phẩm và
+                  dịch vụ của Trung Tâm Gia Sư Biên Hòa.
+                </li>
+              </ul>
+              – Để truy cập và sử dụng một số dịch vụ tại website và ứng dụng
+              của chúng tôi, quý khách có thể sẽ được yêu cầu đăng ký với chúng
+              tôi thông tin cá nhân ( tên, Số điện thoại liên lạc, Email, và các
+              thông tin về học sinh…). Mọi thông tin khai báo phải đảm bảo tính
+              chính xác.
+              <br />– Chúng tôi cũng có thể thu thập thông tin về số lần ghé
+              thăm, bao gồm số trang quý khách xem, số liên kết (links) quý
+              khách click và những thông tin khác liên quan đến việc kết nối đến
+              Gia sư dạy kèm tại nhà Uy Tín Biên Hòa. Chúng tôi cũng thu thập
+              các thông tin mà trình duyệt web (browser) quý khách sử dụng mỗi
+              khi truy cập vào website Gia Sư Biên Hòa, bao gồm: địa chỉ IP,
+              loại browser, ngôn ngữ sử dụng, thời gian và những địa chỉ mà
+              browser truy xuất đến.
+              <br />
+              <br />
+              2. Sử dụng thông tin cá nhân:
+              
               <p>
                 – Trung tâm dạy kèm Biên Hòa thu thập và sử dụng thông tin cá
                 nhân quý khách với mục đích phù hợp và hoàn toàn tuân thủ nội
