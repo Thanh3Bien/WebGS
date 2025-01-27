@@ -13,45 +13,45 @@ export default function Home() {
   const tableData = [
     {
       class: "Lớp lá 1,2,3,4",
-      studentPrice: "900 – 1 triệu/tháng",
-      teacherPrice: "1.3 – 1.4 triệu/tháng"
+      studentPrice: "1.1 – 1.5 triệu/tháng",
+      teacherPrice: "1.2 – 1.6 triệu/tháng"
     },
     {
       class: "Lớp 5,6,7,8",
-      studentPrice: "1 – 1.2 triệu/tháng",
-      teacherPrice: "1.5 – 1.6 triệu/tháng"
+      studentPrice: "1.2 – 1.6 triệu/tháng",
+      teacherPrice: "1.8 – 2.2 triệu/tháng"
     },
     {
-      class: "Lớp 9,10,11",
-      studentPrice: "1.2 – 1.5 triệu/tháng",
-      teacherPrice: "1.7 – 2 triệu/tháng"
+      class: "Lớp 9,10,11,12",
+      studentPrice: "1.4 – 1.8 triệu/tháng",
+      teacherPrice: "2 – 2.4 triệu/tháng"
     },
     {
-      class: "Lớp 12 – LTĐH",
-      studentPrice: "1.5 – 1.6 triệu/tháng",
-      teacherPrice: "2.1 – 2.4 triệu/tháng"
+      class: "LTĐH",
+      studentPrice: "2 – 2.4 triệu/tháng",
+      teacherPrice: "2.4 – 2.8 triệu/tháng"
     }
   ];
   const tableData1 = [
     {
       class: "Lớp lá 1,2,3,4",
-      studentPrice: "1.4 – 1.5 triệu/tháng",
-      teacherPrice: "2 – 2.1 triệu/tháng"
+      studentPrice: "1.7 – 2.3 triệu/tháng",
+      teacherPrice: "1.8 – 2.4 triệu/tháng"
     },
     {
       class: "Lớp 5,6,7,8",
-      studentPrice: "1.5 – 1.8 triệu/tháng",
-      teacherPrice: "2.2 – 2.4 triệu/tháng"
+      studentPrice: "1.8 – 2.4 triệu/tháng",
+      teacherPrice: "2.7 – 3.4 triệu/tháng"
     },
     {
-      class: "Lớp 9,10,11",
-      studentPrice: "1.8 – 2.2 triệu/tháng",
-      teacherPrice: "2.5 – 3 triệu/tháng"
+      class: "Lớp 9,10,11,12",
+      studentPrice: "2.2 – 2.8 triệu/tháng",
+      teacherPrice: "3 – 3.6 triệu/tháng"
     },
     {
-      class: "Lớp 12 – LTĐH",
-      studentPrice: "2.2 – 2.4 triệu/tháng",
-      teacherPrice: "3.2 – 3.6 triệu/tháng"
+      class: "LTĐH",
+      studentPrice: "3 – 3.6 triệu/tháng",
+      teacherPrice: "3.6 – 4.2 triệu/tháng"
     }
   ];
   const [openDropdownBox, setOpenDropdownBox] = useState(false);
@@ -3290,7 +3290,7 @@ export default function Home() {
         </div>
       </div>
       <Footer />
-      <Zalo />
+      {/* <Zalo /> */}
     </>
   );
 }

@@ -175,7 +175,7 @@ export default function Introduce() {
         </div>
       </div>
       <Footer />
-      <Zalo />
+      {/* <Zalo /> */}
     </>
   );
 }

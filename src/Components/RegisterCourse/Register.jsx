@@ -136,7 +136,7 @@ export default function Register({ showHeader = true }) {
           </p>
         </form>
       </div>
-      <Zalo/>
+      {/* <Zalo/> */}
     </>
   );
 }

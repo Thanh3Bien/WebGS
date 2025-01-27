@@ -8,6 +8,7 @@ import ContactButton from './Components/ContactSupport/ContactButton';
 import Map from './Components/Map/Map';
 import Messenger from './Components/MessengerSupport/Messenger';
 import SmsButton from './Components/SmsButton/Sms';
+import ZaloButton from './Components/ZaloSupport/Zalo';
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
       <ContactButton />
       <Messenger/>
       <SmsButton/>
+      <ZaloButton/>
     </>
   );
 }
