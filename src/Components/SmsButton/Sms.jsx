@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./Sms.module.scss";
-import img from "../../assets/smsicon.jpg";
+import img from "../../assets/smsinconblue.jpg";
 export default function SmsButton() {
     const phoneNumber = "0393687033"; // Thay thế bằng số điện thoại bạn muốn gửi SMS
     const message = "Hello!"; // Tin nhắn mặc định (nếu có)

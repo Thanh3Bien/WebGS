@@ -55,13 +55,14 @@ const Header = () => {
                 </ul>
               </li>
               <li>
-                <Link to="/privacy" className="pt-6 text-white">
-                  Chính sách bảo mật
+                <Link to="/register" className="pt-6 text-white">
+                Đăng Kí Học Gia Sư
                 </Link>
               </li>
               <li>
-                <Link to="/register" className="pt-6 text-white">
-                  Đăng Kí Học Gia Sư
+                <Link to="/privacy" className="pt-6 text-white">
+                  
+                  Chính sách bảo mật
                 </Link>
               </li>
             </ul>

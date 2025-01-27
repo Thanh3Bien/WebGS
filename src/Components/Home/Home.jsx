@@ -292,10 +292,10 @@ export default function Home() {
                 <li>
                   Hỗ trợ mọi lúc, học viên có thể nhắn tin hỏi bài ngoài giờ.
                 </li>
-                <li>
+                {/* <li>
                   Báo cáo tiến độ hàng tháng giúp phụ huynh dễ dàng theo dõi sự
                   tiến bộ của con.
-                </li>
+                </li> */}
               </ul>
             </p>
             <p>
@@ -3148,14 +3148,14 @@ export default function Home() {
                 ez-toc-data-id="#11_Lien_he_Trung_Tam_Gia_Su_Bien_Hoa_de_duoc_tu_van_mien_phi"
               ></span>
               <span style={{ color: "#008000" }} id="Lien-he">
-                4. Liên hệ (Zalo, Facebook, địa chỉ nhà){" "}
+                4. Liên hệ{" "}
                 {/* <a href="/" style={{ color: "#008000" }}>
                   Gia Sư Biên Hòa
                 </a>{" "} */}
                 {/* để được tư vấn miễn phí . */}
               </span>
             </h2>
-            <br />
+            {/* <br /> */}
             {/* <h2 id="single">
               <span
                 className="ez-toc-section"
