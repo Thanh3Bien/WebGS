@@ -3,6 +3,7 @@ import styles from "./Introduce.module.scss";
 import Header from "../../Header/Header";
 import Footer from "../Footer/Footer";
 import Zalo from "../ZaloSupport/Zalo";
+import { Link } from "react-router-dom";
 export default function Introduce() {
   return (
     <>
@@ -153,12 +154,12 @@ export default function Introduce() {
           </p> */}
           <p>
             <span style={{ color: "#0000ff" }}>
-              <a
-                style={{ color: "#0000ff" }}
-                href="/register"
-              >
-                Đăng ký ngay hôm nay – Cơ hội học thử miễn phí
-              </a>
+            <Link
+              style={{ color: "#0000ff" }}
+              to="/register"
+            >
+              Đăng ký ngay hôm nay – Cơ hội học thử miễn phí
+            </Link>
             </span>
             <ul className="list-disc">
               <li>Hotline tư vấn: 0975 248 259</li>

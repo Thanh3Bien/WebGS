@@ -5,6 +5,7 @@ import Introduce from './Components/Introduction/Introduce';
 import Register from './Components/RegisterCourse/Register';
 import Privacy from './Components/Privacy/Privacy';
 import ContactButton from './Components/ContactSupport/ContactButton';
+import Map from './Components/Map/Map';
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/privacy" element={<Privacy />} />
       </Routes>
+      <Map />
       <ContactButton />
     </>
   );
