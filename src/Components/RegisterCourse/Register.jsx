@@ -77,6 +77,8 @@ export default function Register() {
                   maxLength="400"
                   className="w-full text-[#212121] bg-[#fafafa] border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
                   type="number"
+                  min="1"
+                  max="12"
                   required
                   name="class_subject"
                 />
