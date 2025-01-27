@@ -3,7 +3,7 @@ import styles from "./Messenger.module.scss";
 import img from "../../assets/mess.jpg";
 export default function Messenger() {
     const handleClick = () => {
-        window.open("https://www.facebook.com/messages/t/61572238568640/", "_blank"); // Đổi với tên người dùng của bạn
+        window.open("https://m.me/61572238568640", "_blank"); // Đổi với tên người dùng của bạn
     };
 
     return (
