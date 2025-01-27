@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "../../Header/Header";
 import styles from "../Home/Home.module.scss";
 import { Link } from "react-router-dom";
-import Footer from "../Footer/Footer";
+import Footer from "../Footer/Footer";  
 import Zalo from "../ZaloSupport/Zalo";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Register from '../../Components/RegisterCourse/Register';
@@ -198,7 +198,7 @@ export default function Home() {
                   <em>
                     Luyện thi chuyên sâu: Đầu vào lớp 10 trường THPT chuyên
                     Lương Thế Vinh, trường điểm (Ngô Quyền, Trấn Biên, Nam
-                    Hà,...); ôn luyện thi đại học các khối, vào các trường Đại
+                    Hà,...); luyện thi đại học các khối, vào các trường Đại
                     học lớn, luyện thi các chứng chỉ MOS, IELTS, TOIEC,...
                   </em>
                   ….
@@ -208,12 +208,12 @@ export default function Home() {
             <p>
               Với dịch vụ gia sư 1 kèm 1 chuyên nghiệp, chúng tôi cam kết tiến
               bộ rõ rệt chỉ sau 1 tháng với lộ trình học tập được cá nhân hóa,
-              phù hợp với từng học viên.Học ngay tại nhà, lịch học linh hoạt,
+              phù hợp với từng học sinh. Học ngay tại nhà, lịch học linh hoạt,
               phù hợp với học sinh và gia đình.{" "}
               <span style={{ color: "#0000ff" }}>
                 <strong>
                   Tư vấn miễn phí lộ trình học cá nhân hóa phù hợp với năng lực
-                  và mục tiêu của học viên
+                  và mục tiêu của học sinh.
                 </strong>
               </span>
             </p>
@@ -237,21 +237,21 @@ export default function Home() {
                 ez-toc-data-id="#–_Dang_Ky_De_Duoc_Tu_Van_va_Hoc_Thu_Mien_Phi"
               ></span>
               <span style={{ color: "#800080" }}>
-                – Đăng Ký Để Được Tư Vấn và Học Thử Miễn Phí:
+                Đăng Ký Để Được Tư Vấn và Học Thử Miễn Phí:
               </span>
             </h2>
             <p>
               <span style={{ color: "#0000ff" }}>
                 <strong style={{ fontWeight: 700 }}>
                   Quý phụ huynh điền đầy đủ thông tin bên dưới. Trung Tâm gia sư
-                  Uy Tín Tp Biên Hòa sẽ liên hệ tư vấn cho quý phụ huynh trong
-                  vài phút tới. Nhấn link tại{" "}
+                  Giỏi Biên Hòa sẽ liên hệ tư vấn cho quý phụ huynh trong
+                  vài phút tới. 
                   <Link
                     to="/register"
                     className={styles.linkto}
                     style={{ color: "#0000ff" }}
                   >
-                    đây
+                  
                   </Link>
                 </strong>
               </span>
@@ -265,7 +265,7 @@ export default function Home() {
               <span style={{ color: "#008000" }}>2. Đội ngũ gia sư</span>
             </h2>
             <p>
-              <ul className="list-disc ml-5">
+              <ul className="list-disc ml-0">
                 <li>
                   Giáo viên giỏi, tốt nghiệp chuyên ngành sư phạm, giàu kinh
                   nghiệm từ các trường học uy tín tại Biên Hòa.
@@ -313,22 +313,25 @@ export default function Home() {
                 ez-toc-data-id="#–_Dang_Ky_De_Duoc_Tu_Van_va_Hoc_Thu_Mien_Phi"
               ></span>
               <span style={{ color: "#800080" }}>
-                – Đăng Ký Để Được Tư Vấn và Học Thử Miễn Phí:
+                Đăng Ký Để Được Tư Vấn và Học Thử Miễn Phí:
               </span>
             </h2>
             <p>
               <span style={{ color: "#0000ff" }}>
                 <strong style={{ fontWeight: 700 }}>
                   Quý phụ huynh điền đầy đủ thông tin bên dưới. Trung Tâm gia sư
-                  Uy Tín Tp Biên Hòa sẽ liên hệ tư vấn cho quý phụ huynh trong
-                  vài phút tới. Nhấn link tại{" "}
+                  Giỏi Biên Hòa sẽ liên hệ tư vấn cho quý phụ huynh trong
+                  vài phút tới.
                   <Link
                     to="/register"
                     className={styles.linkto}
                     style={{ color: "#0000ff" }}
                   >
-                    đây
+                  
                   </Link>
+                  <div>
+                <Register showHeader={false} /> {/* Không hiển thị header */}
+              </div>
                 </strong>
               </span>
             </p>
@@ -343,9 +346,9 @@ export default function Home() {
               </span>{" "}
             </h2>
             <p>
-              Bài viết này Trung tâm gia sư Sư Phạm Biên Hòa xin cung cấp tới
-              phụ huynh học sinh và các bạn gia sư bảng giá thuê Gia sư dạy kèm
-              tại nhà Tp Biên Hòa uy tín dạy giỏi năm 2022. Quý phụ huynh tham
+              Bài viết này Trung tâm gia sư Giỏi Biên Hòa xin cung cấp tới
+              phụ huynh học sinh bảng giá thuê Gia sư dạy kèm
+              tại nhà Tp Biên Hòa uy tín dạy giỏi năm 2025. Quý phụ huynh tham
               khảo để lựa chọn gia sư giỏi cho con mình phù hợp nhất:
             </p>
             <h3>
@@ -3186,23 +3189,23 @@ export default function Home() {
                 </strong>
               </span>
               <span style={{ color: "#1b78e2", fontSize: "25px" }}>
-                <a href="/">0975 248 259</a>
+                <a href="/">0393876033</a>
               </span>{" "}
-              <strong>(Bấm vào số để gọi)</strong>
+              {/* <strong>(Bấm vào số để gọi)</strong> */}
             </p>
             <p>(Làm việc 24/7)</p>
             <p>
-              Websites:{" "}
+              {/* Websites:{" "}
               <a
                 href="https://www.giasugioibienhoa.com/"
                 className="text-[#1b78e2] hover:text-cyan-800"
               >
                 https://www.giasugioibienhoa.com/
-              </a>
+              </a> */}
               {/* <br />
               Mail: giasubienhoa42@gmail.com
               <br /> */}
-              <br/>
+              {/* <br/> */}
               <span style={{ color: "#0000ff" }}>
                           <Link
                             style={{ color: "#0000ff" }}
@@ -3212,11 +3215,9 @@ export default function Home() {
                           </Link>
                           </span>
               <br/>
-              <div>
-                <Register showHeader={false} /> {/* Không hiển thị header */}
-              </div>
               
-              Địa chỉ trung tâm gia sư Uy Tín Biên Hòa – Đồng Nai:
+              
+              Địa chỉ trung tâm gia sư Giỏi Biên Hòa – Đồng Nai:
               <br />
               <span style={{ color: "#ff0000" }}>
                 <strong>Cơ sở 1:</strong>
