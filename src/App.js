@@ -6,6 +6,7 @@ import Register from './Components/RegisterCourse/Register';
 import Privacy from './Components/Privacy/Privacy';
 import ContactButton from './Components/ContactSupport/ContactButton';
 import Map from './Components/Map/Map';
+import Messenger from './Components/MessengerSupport/Messenger';
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
       </Routes>
       <Map />
       <ContactButton />
+      <Messenger/>
     </>
   );
 }

@@ -1,0 +1,29 @@
+.messengerSupport {
+    position: fixed;
+    bottom: 280px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.messengerIcon {
+    display: flex;
+    align-items: center;
+    background-color: white; /* Màu nền của nút */
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.messengerImage {
+    width: 40px; /* Kích thước biểu tượng */
+    height: 40px;
+}
+
+.messengerText {
+    display: none;
+    color: blueviolet;
+    margin-left: 5px;
+    @media (min-width: 769px) { 
+        display: block; 
+      }
+}
