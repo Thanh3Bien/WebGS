@@ -60,7 +60,7 @@ export default function Home() {
       <Header />
       <div className={styles.headertitle}>
         <div className={styles.title}>
-          <h1>Trung tâm gia sư uy tín Biên Hòa</h1>
+          <h1>Trung tâm gia sư giỏi Biên Hòa</h1>
           <div className={styles.dropdownBox}>
             <a href="#dropdown" onClick={toggleDropdown}>
               Mục Lục Bài Viết:
@@ -214,7 +214,7 @@ export default function Home() {
                 </strong>
               </span>
             </p>
-            <p>
+            {/* <p>
               <img
                 loading="lazy"
                 decoding="async"
@@ -226,7 +226,7 @@ export default function Home() {
                 srcSet="https://giasuuytinbienhoa.edu.vn/wp-content/uploads/2023/10/trung-tam-gia-su-Bien-Hoa.png 941w, https://giasuuytinbienhoa.edu.vn/wp-content/uploads/2023/10/trung-tam-gia-su-Bien-Hoa-300x153.png 300w, https://giasuuytinbienhoa.edu.vn/wp-content/uploads/2023/10/trung-tam-gia-su-Bien-Hoa-768x391.png 768w"
                 sizes="(max-width: 941px) 100vw, 941px"
               />
-            </p>
+            </p> */}
             <h2 id="single">
               <span
                 className="ez-toc-section"
