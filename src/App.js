@@ -9,6 +9,7 @@ import Map from './Components/Map/Map';
 import Messenger from './Components/MessengerSupport/Messenger';
 import SmsButton from './Components/SmsButton/Sms';
 import ZaloButton from './Components/ZaloSupport/Zalo';
+import Review from './Components/ProductReview/Review';
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
       <Messenger/>
       <SmsButton/>
       <ZaloButton/>
+      <Review/>
     </>
   );
 }
