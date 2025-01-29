@@ -3197,9 +3197,9 @@ export default function Home() {
                 </strong>
               </span>
               <span style={{ color: "#1b78e2", fontSize: "25px" }}>
-                <a href="/">0393876033</a>
+                <a href="tel:0393687033">0393687033</a>
               </span>{" "}
-              {/* <strong>(Bấm vào số để gọi)</strong> */}
+              <strong  style={{ color: 'red', fontSize: '20px' }}>(Thầy Thành)</strong>
             </p>
             <p>(Làm việc 24/7)</p>
             <p>
