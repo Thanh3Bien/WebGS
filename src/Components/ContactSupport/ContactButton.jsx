@@ -1,17 +1,4 @@
-// import React from 'react';
-// import styles from './ContactButton.module.scss';
-
-// const ContactButton = () => {
-//   return (
-//     <div className={styles.fixedPhoneLink}>
-//       <a href="tel:0393687033" className={styles.phoneText}>Liên Hệ Ngay</a>
-//     </div>
-//   );
-// };
-
-// export default ContactButton;
-
-import React from 'react';
+import React from "react";
 import styles from "./ContactButton.module.scss";
 import phoneIcon from "../../assets/phoneicon.png";
 
@@ -22,11 +9,16 @@ export default function ContactButton() {
     };
 
     return (
+      <div>
+        <div className={styles.fixedPhoneLink}>
+      <a href="tel:0393687033" className={styles.phoneText}>Liên Hệ Ngay</a>
+    </div>
         <div className={styles.contactsupport}>
             <div className={styles.contacticon} onClick={handleClick}>
                 <img src={phoneIcon} alt="Contact Support" className={styles.contactimage} />
                 <span className={styles.contacttext}>Liên Hệ Ngay</span>
             </div>
+        </div>
         </div>
     );
 }

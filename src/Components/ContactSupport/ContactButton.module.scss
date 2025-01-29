@@ -1,31 +1,31 @@
-// .fixedPhoneLink {
-//     display: none; // Ẩn mặc định
-  
-//     @media (max-width: 768px) {
-//       display: flex; // Hiển thị trên màn hình nhỏ
-//       position: fixed; // Cố định vị trí
-//       bottom: 0; // Đặt ở phía dưới
-//       left: 0; // Đặt ở phía bên trái
-//       right: 0; // Đặt ở phía bên phải
-//       max-width: 100vw;
-//       background-color: #007bff; // Màu nền (có thể thay đổi)
-//       color: white; // Màu chữ
-//       justify-content: center; // Căn giữa nội dung
-//       padding: 15px; // Khoảng cách bên trong
-//       text-align: center; // Căn giữa văn bản
-//       z-index: 1000; // Đảm bảo nó hiển thị trên các phần tử khác
-//     }
-//   }
-  
-//   .phoneText {
-//     color: white; // Màu chữ
-//     text-decoration: none; // Bỏ gạch chân
-//     font-size: 16px; // Kích thước chữ (có thể điều chỉnh)
-//   }
+.fixedPhoneLink {
+  display: none; // Ẩn mặc định
+
+  @media (max-width: 768px) {
+      display: flex; // Hiển thị trên màn hình nhỏ
+      position: fixed; // Cố định vị trí
+      bottom: 0; // Đặt ở phía dưới
+      left: 0; // Đặt ở phía bên trái
+      right: 0; // Đặt ở phía bên phải
+      max-width: 100vw;
+      background-color: #007bff; // Màu nền (có thể thay đổi)
+      color: white; // Màu chữ
+      justify-content: center; // Căn giữa nội dung
+      padding: 15px; // Khoảng cách bên trong
+      text-align: center; // Căn giữa văn bản
+      z-index: 1000; // Đảm bảo nó hiển thị trên các phần tử khác
+  }
+}
+
+.phoneText {
+  color: white; // Màu chữ
+  text-decoration: none; // Bỏ gạch chân
+  font-size: 16px; // Kích thước chữ (có thể điều chỉnh)
+}
 
 .contactsupport {
-  position: fixed; // Đặt vị trí cố định nếu cần
-  bottom: 120px; // Vị trí từ dưới lên
+  position: fixed; // Đặt vị trí cố định
+  bottom: 70px; // Vị trí từ dưới lên
   right: 20px; // Vị trí từ phải sang
   cursor: pointer; // Hiển thị con trỏ chuột khi di chuột qua
 
