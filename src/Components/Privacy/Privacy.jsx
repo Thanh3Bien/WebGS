@@ -112,7 +112,7 @@ export default function Privacy() {
                 bảo mật” mà không cần phải thông báo trước, để phù hợp với các
                 nhu cầu của Gia sư&nbsp;Biên Hòa&nbsp;cũng như nhu cầu được phản
                 hồi từ Phụ huynh. Khi cập nhật nội dung chính sách này, chúng
-                tôi sẽ chỉnh sửa lại thời gian “Cập nhật lần cuối” bên dưới.
+                tôi sẽ chỉnh/ sửa lại thời gian “Cập nhật lần cuối” bên dưới.
                 <br />
                 – Nội dung “Chính sách bảo mật” này chỉ áp dụng tại Trung tâm
                 gia sư Biên Hòa, không bao gồm hoặc liên quan đến các bên thứ ba
@@ -130,8 +130,8 @@ export default function Privacy() {
                 phản hồi thông tin từ quý khách hàng về “Chính sách bảo mật”.
                 Nếu quý khách có những thắc mắc liên quan xin vui lòng liên hệ
                 theo địa chỉ email giasuuytinbienhoa@gmail.com hoặc{" "}
-                <a href="/">
-                  tổng đài tư vấn gia sư&nbsp;Biên Hòa&nbsp;0815062700
+                <a href="tel:0393687033">
+                  tổng đài tư vấn gia sư&nbsp;Biên Hòa&nbsp;0393687033
                 </a>
                 .<br />
                 Trung tâm gia sư Uy Tín&nbsp;Biên Hòa

@@ -63,7 +63,7 @@ export default function Home() {
       <Header />
       <div className={styles.headertitle}>
         <div className={styles.title}>
-          <h1>Trung tâm gia sư giỏi Biên Hòa</h1>
+          <h1>TRUNG TÂM GIA SƯ GIỎI BIÊN HÒA</h1>
           <div className={styles.dropdownBox}>
             <a href="#dropdown" onClick={toggleDropdown}>
               Mục Lục Bài Viết:
@@ -150,18 +150,34 @@ export default function Home() {
                       href="#4"
                       onClick={(e) => {
                         e.preventDefault();
-                        const section = document.getElementById("Lien-he");
+                        const section = document.getElementById("Quy-trinh-dang-ki-thue-gia-su");
                         if (section) {
                           section.scrollIntoView({ behavior: "smooth" });
                         }
                       }}
                     >
-                      4. Liên hệ
+                      4. Quy trình đăng kí thuê gia sư 
                     </a>
                   </li>
                   <li>
                     <a
                       href="#5"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const section =
+                          document.getElementById("Lien-he");
+                        if (section) {
+                          section.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }}
+                    >
+                      5. Liên hệ
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#6"
                       onClick={(e) => {
                         e.preventDefault();
                         const section =
@@ -171,7 +187,7 @@ export default function Home() {
                         }
                       }}
                     >
-                      5. Đánh giá phụ huynh
+                      6. Đánh giá của phụ huynh
                     </a>
                   </li>
                 </ul>
@@ -190,7 +206,7 @@ export default function Home() {
               </strong>{" "}
               Trung tâm Gia sư Giỏi Biên Hòa là lựa chọn lý tưởng để giúp con
               bạn cải thiện kết quả học tập nhanh chóng và bền vững.{" "}
-              <strong>
+              <strong style={{ color: "#0000ff" }}>
                 Dành cho học sinh từ lớp 1 đến lớp 12, từ cơ bản đến nâng cao.
               </strong>{" "}
               <span style={{ color: "#0000ff" }}>
@@ -230,7 +246,7 @@ export default function Home() {
                 sizes="(max-width: 941px) 100vw, 941px"
               />
             </p> */}
-            <h2 id="single">
+            {/* <h2 id="single">
               <span
                 className="ez-toc-section"
                 id="%E2%80%93_Dang_Ky_De_Duoc_Tu_Van_va_Hoc_Thu_Mien_Phi"
@@ -255,7 +271,7 @@ export default function Home() {
                   </Link>
                 </strong>
               </span>
-            </p>
+            </p> */}
             <h2 id="Doi-ngu-gia-su">
               <span
                 className="ez-toc-section"
@@ -552,6 +568,43 @@ export default function Home() {
               </tbody>
             </table>
             <br />
+
+            <h2 id="Quy-trinh-dang-ki-thue-gia-su">
+              <span
+                className="ez-toc-section"
+                id="4_Quy_trinh_dang_ki_thue_gia_su"
+                ez-toc-data-id="#4_Quy_trinh_dang_ki_thue_gia_su"
+              ></span>
+              <span style={{ color: "#008000" }} >4. Quy trình đăng kí thuê gia sư</span>
+            </h2>
+            <p>
+              <ul className="list-disc ml-0">
+                <li>
+                  <strong>Bước 1:</strong> Trung tâm tiếp nhận thông tin đăng kí tư vấn
+                </li>
+                <li>
+                  <strong>Bước 2:</strong> Trung tâm gặp mặt tư vấn trực tiếp tại nhà
+                </li>
+                <li>
+                  {" "}
+                  <strong>Bước 3:</strong> Sắp xếp giáo viên dạy thử 1 đến 2 buổi
+                </li>
+                <li>
+                  <strong>Bước 4:</strong> Tiếp nhận kí hợp đồng để học chính thức
+                </li>
+                <li>
+                  <strong>Bước 5:</strong> Thanh toán học phí vào cuối tháng
+                </li>
+                <li>
+                  <strong>Bước 6:</strong> Trung tâm hỗ trợ dịch vụ trong suốt quá trình học
+                </li>
+                {/* <li>
+                  Báo cáo tiến độ hàng tháng giúp phụ huynh dễ dàng theo dõi sự
+                  tiến bộ của con.
+                </li> */}
+              </ul>
+            </p>
+
             {/* <p>
               <span style={{ color: "#ff0000" }}>
                 <strong>
@@ -3156,7 +3209,7 @@ export default function Home() {
                 ez-toc-data-id="#11_Lien_he_Trung_Tam_Gia_Su_Bien_Hoa_de_duoc_tu_van_mien_phi"
               ></span>
               <span style={{ color: "#008000" }} id="Lien-he">
-                4. Liên hệ{" "}
+                5. Liên hệ{" "}
                 {/* <a href="/" style={{ color: "#008000" }}>
                   Gia Sư Biên Hòa
                 </a>{" "} */}
@@ -3260,7 +3313,7 @@ export default function Home() {
           </div>
         </div>
         <h1 className="ml-9 text-[#008000] text-3xl" id="Danh-gia-phu-huynh">
-          5. Đánh giá của phụ huynh
+          6. Đánh giá của phụ huynh
         </h1>
         <div className={styles.carousel}>
           <Carousel showThumbs={false} infiniteLoop autoPlay>

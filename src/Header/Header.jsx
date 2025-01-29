@@ -23,7 +23,7 @@ const Header = () => {
                 />
               </Link>
             </div>
-            <h1 className={styles.siteTitle}>Trung tâm Gia Sư Giỏi Biên Hòa</h1>
+            <h1 className={styles.siteTitle}>TRUNG TÂM GIA SƯ GIỎI BIÊN HÒA</h1>
           </div>
           <br />
           <div className={styles.navLinks}>

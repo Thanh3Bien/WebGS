@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c1759b64.css",
-    "main.js": "/static/js/main.3369d434.js",
+    "main.css": "/static/css/main.14039fcd.css",
+    "main.js": "/static/js/main.ddf072fa.js",
     "static/js/453.99566945.chunk.js": "/static/js/453.99566945.chunk.js",
     "static/media/bien-hoa-vo-van-kieu-toc-dep-tre-trung-cho-phu-nu-trung-nien-6.png": "/static/media/bien-hoa-vo-van-kieu-toc-dep-tre-trung-cho-phu-nu-trung-nien-6.fa4ff7fb32b654fe7981.png",
     "static/media/z6260461294475_jpg": "/static/media/z6260461294475_7ef552247c80c53ebb9b621cffa245ea.2ac3102590b7ad8047b5.jpg",
@@ -9,12 +9,12 @@
     "static/media/google-maps.png": "/static/media/google-maps.29005926b7792877cee1.png",
     "static/media/smsinconblue.jpg": "/static/media/smsinconblue.e2f089ac015a346ed9f0.jpg",
     "index.html": "/index.html",
-    "main.c1759b64.css.map": "/static/css/main.c1759b64.css.map",
-    "main.3369d434.js.map": "/static/js/main.3369d434.js.map",
+    "main.14039fcd.css.map": "/static/css/main.14039fcd.css.map",
+    "main.ddf072fa.js.map": "/static/js/main.ddf072fa.js.map",
     "453.99566945.chunk.js.map": "/static/js/453.99566945.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1759b64.css",
-    "static/js/main.3369d434.js"
+    "static/css/main.14039fcd.css",
+    "static/js/main.ddf072fa.js"
   ]
 }
