@@ -4,7 +4,7 @@ import styles from './ContactButton.module.scss';
 const ContactButton = () => {
   return (
     <div className={styles.fixedPhoneLink}>
-      <a href="tel:0815062700" className={styles.phoneText}>Liên Hệ Ngay</a>
+      <a href="tel:0393687033" className={styles.phoneText}>Liên Hệ Ngay</a>
     </div>
   );
 };
