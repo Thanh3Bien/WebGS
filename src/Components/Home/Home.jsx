@@ -9,6 +9,9 @@ import Register from '../../Components/RegisterCourse/Register';
 import { Carousel } from "react-responsive-carousel";
 import img2 from "../../assets/bien-hoa-vo-van-kieu-toc-dep-tre-trung-cho-phu-nu-trung-nien-6.png";
 import img1 from "../../assets/QC1-1024x1024.jpg";
+import img3 from "../../assets/imgathomepageconfirm.jpg";
+import img4 from "../../assets/doingugiasuathomepage.jpg";
+import img5 from "../../assets/belowdangkideduoctuvanmienphi.jpg";
 export default function Home() {
   const tableData = [
     {
@@ -232,6 +235,10 @@ export default function Home() {
                   và mục tiêu của học sinh.
                 </strong>
               </span>
+              <img
+              src={img3}
+              alt=""
+              />
             </p>
             {/* <p>
               <img
@@ -322,6 +329,11 @@ export default function Home() {
                 </strong>
               </span>
             </p>
+            <img
+              src={img4}
+              alt=""
+              />
+              <br/>
             <h2 id="single">
               <span
                 className="ez-toc-section"
@@ -331,6 +343,10 @@ export default function Home() {
               <span style={{ color: "#800080" }}>
                 Đăng Ký Để Được Tư Vấn và Học Thử Miễn Phí:
               </span>
+              <img
+              src={img5}
+              alt=""
+              />
             </h2>
             <p>
               <span style={{ color: "#0000ff" }}>
