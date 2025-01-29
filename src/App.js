@@ -19,7 +19,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/privacy" element={<Privacy />} />
       </Routes>
-      <Map />
+      {/* <Map /> */}
       <ContactButton />
       <Messenger/>
       <SmsButton/>
