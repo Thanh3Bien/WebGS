@@ -22,7 +22,7 @@ function App() {
       {/* <Map /> */}
       <ContactButton />
       <Messenger/>
-      <SmsButton/>
+      {/* <SmsButton/> */}
       <ZaloButton/>
       {/* <Review/> */}
     </>

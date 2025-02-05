@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d7a8d23.css",
-    "main.js": "/static/js/main.71bd0efe.js",
+    "main.css": "/static/css/main.0b0a7c06.css",
+    "main.js": "/static/js/main.70acaf72.js",
     "static/js/453.99566945.chunk.js": "/static/js/453.99566945.chunk.js",
     "static/media/bien-hoa-vo-van-kieu-toc-dep-tre-trung-cho-phu-nu-trung-nien-6.png": "/static/media/bien-hoa-vo-van-kieu-toc-dep-tre-trung-cho-phu-nu-trung-nien-6.fa4ff7fb32b654fe7981.png",
     "static/media/doingugiasuathomepage.jpg": "/static/media/doingugiasuathomepage.20c55b8079646095b077.jpg",
@@ -10,15 +10,16 @@
     "static/media/imgathomepageconfirm.jpg": "/static/media/imgathomepageconfirm.123f1ce2b22e535a1fc2.jpg",
     "static/media/belowdangkideduoctuvanmienphi.jpg": "/static/media/belowdangkideduoctuvanmienphi.2b2670db39e3ba59545f.jpg",
     "static/media/google-maps.png": "/static/media/google-maps.29005926b7792877cee1.png",
-    "static/media/phoneicon.png": "/static/media/phoneicon.5e684a694b0f0d2538b2.png",
+    "static/media/messengerIconNoBackGround.png": "/static/media/messengerIconNoBackGround.c8a0e6dd02e535de0378.png",
+    "static/media/zaloNoBackGround.png": "/static/media/zaloNoBackGround.55d610d5be4293ddc9ea.png",
     "static/media/smsinconblue.jpg": "/static/media/smsinconblue.e2f089ac015a346ed9f0.jpg",
     "index.html": "/index.html",
-    "main.9d7a8d23.css.map": "/static/css/main.9d7a8d23.css.map",
-    "main.71bd0efe.js.map": "/static/js/main.71bd0efe.js.map",
+    "main.0b0a7c06.css.map": "/static/css/main.0b0a7c06.css.map",
+    "main.70acaf72.js.map": "/static/js/main.70acaf72.js.map",
     "453.99566945.chunk.js.map": "/static/js/453.99566945.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d7a8d23.css",
-    "static/js/main.71bd0efe.js"
+    "static/css/main.0b0a7c06.css",
+    "static/js/main.70acaf72.js"
   ]
 }

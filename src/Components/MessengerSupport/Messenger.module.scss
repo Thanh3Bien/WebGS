@@ -1,22 +1,39 @@
 .messengerSupport {
     position: fixed;
     bottom: 280px;
-    right: 20px;
+    right: 30px;
     cursor: pointer;
+    @keyframes shake {
+        0% { transform: rotate(0deg); }     /* Giữ nguyên tại 0 độ */
+      30% { transform: rotate(0deg); }    /* Giữ nguyên tại 0 độ */
+      40% { transform: rotate(15deg); }   /* Nghiêng sang phải */
+      50% { transform: rotate(0deg); }    /* Trở về 0 độ */
+      60% { transform: rotate(-15deg); }  /* Nghiêng sang trái */
+      70% { transform: rotate(0deg); }    /* Trở về 0 độ */
+      80% { transform: rotate(0deg); }    /* Giữ nguyên tại 0 độ */
+      100% { transform: rotate(0deg); }    /* Giữ nguyên tại 0 độ */
+    }
+    
+    @media (max-width: 768px) { /* Điều chỉnh kích thước theo nhu cầu */
+      .shake {
+        animation: shake 0.8s ease infinite;
+        animation-delay: 2s; /* Thêm độ nghỉ sau khi đã rung */
+      }
+    }
 }
 
 .messengerIcon {
     display: flex;
     align-items: center;
-    background-color: white; /* Màu nền của nút */
-    border-radius: 50px;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    // background-color: white; /* Màu nền của nút */
+    // border-radius: 50px;
+    // padding: 10px;
+    // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .messengerImage {
-    width: 35px; /* Kích thước biểu tượng */
-    height: 35px;
+    width: 45px; /* Kích thước biểu tượng */
+    height: 50px;
 }
 
 .messengerText {
@@ -26,4 +43,5 @@
     @media (min-width: 769px) { 
         display: block; 
       }
+
 }

@@ -5,10 +5,10 @@
     bottom: 360px;
     right: 20px;
     cursor: pointer;
-    background-color: white; /* Màu nền của nút */
-    border-radius: 50px;
-    padding: 10px 5px 10px 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    // background-color: white; /* Màu nền của nút */
+    // border-radius: 50px;
+    // padding: 10px 5px 10px 10px;
+    // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
     &:hover {
         background-color: #e0e0e0; /* Màu nền khi hover */
@@ -16,7 +16,7 @@
 }
 
 .smsImage {
-    width: 35px; /* Kích thước biểu tượng */
+    width: 40px; /* Kích thước biểu tượng */
     height: 40px;
     margin-right: 8px; /* Khoảng cách giữa biểu tượng và văn bản */
 }

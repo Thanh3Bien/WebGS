@@ -39,9 +39,7 @@ export default function Register({ showHeader = true }) {
           <h1 className="text-2xl font-bold text-left mb-6 text-[#333] -mt-4">
             Form Đăng Kí Học Gia Sư Cho Học Sinh
           </h1>
-          {successMessage && (
-            <p className="mb-4 text-green-600 font-bold">{successMessage}</p>
-          )}
+          
           <p className="mb-4">
             <label className="block font-medium text-gray-700 mb-2 cursor-default">
               Họ Tên Phụ Huynh
@@ -139,6 +137,9 @@ export default function Register({ showHeader = true }) {
             >
               Gửi
             </button>
+            {successMessage && (
+            <p className="mb-4 text-green-600 font-bold">{successMessage}</p>
+          )}
           </p>
         </form>
       </div>

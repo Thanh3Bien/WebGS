@@ -133,7 +133,7 @@ export default function Home() {
                       2. Đội ngũ gia sư
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       href="#3"
                       onClick={(e) => {
@@ -147,10 +147,10 @@ export default function Home() {
                     >
                       3. Bảng giá tham khảo
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a
-                      href="#4"
+                      href="#3"
                       onClick={(e) => {
                         e.preventDefault();
                         const section = document.getElementById("Quy-trinh-dang-ki-thue-gia-su");
@@ -159,12 +159,12 @@ export default function Home() {
                         }
                       }}
                     >
-                      4. Quy trình đăng kí thuê gia sư 
+                      3. Quy trình đăng kí thuê gia sư 
                     </a>
                   </li>
                   <li>
                     <a
-                      href="#5"
+                      href="#4"
                       onClick={(e) => {
                         e.preventDefault();
                         const section =
@@ -174,13 +174,13 @@ export default function Home() {
                         }
                       }}
                     >
-                      5. Liên hệ
+                      4. Liên hệ
                     </a>
                   </li>
 
                   <li>
                     <a
-                      href="#6"
+                      href="#5"
                       onClick={(e) => {
                         e.preventDefault();
                         const section =
@@ -190,7 +190,7 @@ export default function Home() {
                         }
                       }}
                     >
-                      6. Đánh giá của phụ huynh
+                      5. Đánh giá của phụ huynh
                     </a>
                   </li>
                 </ul>
@@ -367,7 +367,7 @@ export default function Home() {
                 </strong>
               </span>
             </p>
-            <h2>
+            {/* <h2>
               <span
                 className="ez-toc-section"
                 id="4_Bang_gia_gia_su_Bien_Hoa_%E2%80%93_Lien_he_tu_van_0961_328_357"
@@ -376,14 +376,14 @@ export default function Home() {
               <span style={{ color: "#008000" }} id="bang-gia-tham-khao">
                 3. Bảng giá tham khảo
               </span>{" "}
-            </h2>
-            <p>
+            </h2> */}
+            {/* <p>
               Bài viết này Trung tâm gia sư Giỏi Biên Hòa xin cung cấp tới
               phụ huynh học sinh bảng giá thuê Gia sư dạy kèm
               tại nhà Tp Biên Hòa uy tín dạy giỏi năm 2025. Quý phụ huynh tham
               khảo để lựa chọn gia sư giỏi cho con mình phù hợp nhất:
-            </p>
-            <h3>
+            </p> */}
+            {/* <h3>
               <span
                 className="ez-toc-section"
                 id="Gia_su_day_kem_tai_nha_2_buoituan_tai_Bien_hoa"
@@ -582,7 +582,7 @@ export default function Home() {
                   </tr>
                 ))}
               </tbody>
-            </table>
+            </table> */}
             <br />
 
             <h2 id="Quy-trinh-dang-ki-thue-gia-su">
@@ -591,7 +591,7 @@ export default function Home() {
                 id="4_Quy_trinh_dang_ki_thue_gia_su"
                 ez-toc-data-id="#4_Quy_trinh_dang_ki_thue_gia_su"
               ></span>
-              <span style={{ color: "#008000" }} >4. Quy trình đăng kí thuê gia sư</span>
+              <span style={{ color: "#008000" }} >3. Quy trình đăng kí thuê gia sư</span>
             </h2>
             <p>
               <ul className="list-disc ml-0">
@@ -3225,7 +3225,7 @@ export default function Home() {
                 ez-toc-data-id="#11_Lien_he_Trung_Tam_Gia_Su_Bien_Hoa_de_duoc_tu_van_mien_phi"
               ></span>
               <span style={{ color: "#008000" }} id="Lien-he">
-                5. Liên hệ{" "}
+                4. Liên hệ{" "}
                 {/* <a href="/" style={{ color: "#008000" }}>
                   Gia Sư Biên Hòa
                 </a>{" "} */}
@@ -3329,7 +3329,7 @@ export default function Home() {
           </div>
         </div>
         <h1 className="ml-9 text-[#008000] text-3xl" id="Danh-gia-phu-huynh">
-          6. Đánh giá của phụ huynh
+          5. Đánh giá của phụ huynh
         </h1>
         <div className={styles.carousel}>
           <Carousel showThumbs={false} infiniteLoop autoPlay>
