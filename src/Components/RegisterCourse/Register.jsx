@@ -1,10 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./Register.module.scss";
 import Header from "../../Header/Header";
 import emailjs from "@emailjs/browser";
 import Zalo from "../../Components/ZaloSupport/Zalo";
 export default function Register({ showHeader = true }) {
   const form = useRef();
+  const [successMessage, setSuccessMessage] = useState(""); // Trạng thái cho thông báo
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -17,10 +18,12 @@ export default function Register({ showHeader = true }) {
       )
       .then(
         () => {
-          console.log("SUCCESS!");
+          setSuccessMessage("Gửi biểu mẫu thành công!"); // Cập nhật thông báo thành công
+          form.current.reset(); // Làm mới các ô nhập liệu
         },
         (error) => {
           console.error("FAILED...", error);
+          setSuccessMessage("Gửi biểu mẫu thất bại. Vui lòng thử lại."); // Thông báo lỗi
         }
       );
   };
@@ -36,6 +39,9 @@ export default function Register({ showHeader = true }) {
           <h1 className="text-2xl font-bold text-left mb-6 text-[#333] -mt-4">
             Form Đăng Kí Học Gia Sư Cho Học Sinh
           </h1>
+          {successMessage && (
+            <p className="mb-4 text-green-600 font-bold">{successMessage}</p>
+          )}
           <p className="mb-4">
             <label className="block font-medium text-gray-700 mb-2 cursor-default">
               Họ Tên Phụ Huynh
