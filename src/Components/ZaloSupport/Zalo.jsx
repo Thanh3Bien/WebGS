@@ -9,7 +9,7 @@ export default function Zalo() {
     <div className={styles.zalosupport}>
         <div className={`${styles.zaloicon} ${styles.shake}`} onClick={handleClick}>
           <img src={img} alt="Zalo Support" className={styles.zaloimage} />
-          <span className={styles.zalotext}>Hỗ Trợ Ngay</span>
+          {/* <span className={styles.zalotext}>Hỗ Trợ Ngay</span> */}
         </div>
       </div>
   )

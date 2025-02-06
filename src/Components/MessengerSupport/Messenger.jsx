@@ -10,7 +10,7 @@ export default function Messenger() {
         <div className={styles.messengerSupport}>
             <div className={`${styles.messengerImage} ${styles.shake}`} onClick={handleClick}>
                 <img src={img} alt="Messenger Support" className={styles.messengerImage} />
-                <span className={styles.messengerText}>Nhắn Tin Ngay</span>
+                {/* <span className={styles.messengerText}>Nhắn Tin Ngay</span> */}
             </div>
         </div>
     );

@@ -17,7 +17,7 @@ export default function ContactButton() {
         <div className={styles.contactsupport}>
             <div className={`${styles.contacticon} ${styles.shake}`} onClick={handleClick}>
                 <img src={phoneIcon} alt="Contact Support" className={styles.contactimage} />
-                <span className={styles.contacttext}>Liên Hệ Ngay</span>
+                {/* <span className={styles.contacttext}>Liên Hệ Ngay</span> */}
             </div>
         </div>
         </div>
