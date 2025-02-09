@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0b0a7c06.css",
-    "main.js": "/static/js/main.ed55824a.js",
+    "main.js": "/static/js/main.fdd7bcd0.js",
     "static/js/453.99566945.chunk.js": "/static/js/453.99566945.chunk.js",
     "static/media/bien-hoa-vo-van-kieu-toc-dep-tre-trung-cho-phu-nu-trung-nien-6.png": "/static/media/bien-hoa-vo-van-kieu-toc-dep-tre-trung-cho-phu-nu-trung-nien-6.fa4ff7fb32b654fe7981.png",
     "static/media/doingugiasuathomepage.jpg": "/static/media/doingugiasuathomepage.20c55b8079646095b077.jpg",
@@ -15,11 +15,11 @@
     "static/media/smsinconblue.jpg": "/static/media/smsinconblue.e2f089ac015a346ed9f0.jpg",
     "index.html": "/index.html",
     "main.0b0a7c06.css.map": "/static/css/main.0b0a7c06.css.map",
-    "main.ed55824a.js.map": "/static/js/main.ed55824a.js.map",
+    "main.fdd7bcd0.js.map": "/static/js/main.fdd7bcd0.js.map",
     "453.99566945.chunk.js.map": "/static/js/453.99566945.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0b0a7c06.css",
-    "static/js/main.ed55824a.js"
+    "static/js/main.fdd7bcd0.js"
   ]
 }

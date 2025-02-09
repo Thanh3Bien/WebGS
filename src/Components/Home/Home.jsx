@@ -66,7 +66,20 @@ export default function Home() {
       <Header />
       <div className={styles.headertitle}>
         <div className={styles.title}>
-          <h1>TRUNG TÂM GIA SƯ GIỎI BIÊN HÒA</h1>
+          <h1>TRUNG TÂM GIA SƯ DẠY KÈM TẠI NHÀ
+          <p>
+              <span style={{ color: "#ff0000" }}>
+                <strong>
+                  <span style={{ fontSize: "25px" }}>Hotline tư vấn hoặc nhắn tin qua zalo </span>
+                </strong>
+              </span>
+              <span style={{ color: "#1b78e2", fontSize: "25px" }}>
+                <a href="tel:0393687033">0393687033</a>
+              </span>{" "}
+              {/* <strong  style={{ color: 'red', fontSize: '20px' }}>(Thầy Thành)</strong> */}
+            </p>
+          </h1>
+          
           <div className={styles.dropdownBox}>
             <a href="#dropdown" onClick={toggleDropdown}>
               Mục Lục Bài Viết:
